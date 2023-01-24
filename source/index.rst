@@ -1,19 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Kinovea reference manual
+    Manual de referencia de Kinovea
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Welcome to the manual for `Kinovea <https://www.kinovea.org>`__.
+Bienvenido al manual para `Kinovea <https://www.kinovea.org>`__.
 
-Kinovea is a video annotation tool designed for motion analysis.
-It features utilities to capture, slow down, compare, annotate and measure motion in videos.
+Kinovea es una herramienta de anotación de video diseñada para el análisis del movimiento.
+Cuenta con utilidades para capturar, ralentizar, comparar, anotar y medir el movimiento en videos.
 
-For a single-page overview of the features of Kinovea you may consult the `Features <https://www.kinovea.org/features.html>`__ page on the website.
+Para obtener una descripción general de una sola página de las funciones de Kinovea, puede consultar la `página de características en el sitio web. <https://www.kinovea.org/features.html>`__ 
 
 .. tip:: 
-    This manual can be used offline: `download the manual (zipped web pages) <Kinovea-Manual-0.9.5.zip>`__.
+    Este manual puede ser utilizado sin conexión: `descargue el manual (comprimido en Zip) <Kinovea-Manual-0.9.5.zip>`__.
 
-The sections below and the table of content in the sidebar should let you access the documentation for your topic of interest. 
-You can also use the search function in the top left corner.
+Las secciones a continuación y la tabla de contenido en la barra lateral deberían permitirle acceder a la documentación de su tema de interés.
+También puede utilizar la función de búsqueda en la esquina superior izquierda.
 
     .. container:: tocdescr
 
@@ -23,7 +23,7 @@ You can also use the search function in the top left corner.
                 :target: userinterface/index.html
 
             :doc:`/userinterface/index`
-                Description of the main window, workspaces and the preference pages.
+                Descripción de la ventana principal, los espacios de trabajo y las páginas de preferencias.
 
         .. container:: descr
 
@@ -31,7 +31,7 @@ You can also use the search function in the top left corner.
                 :target: observation/index.html
 
             :doc:`/observation/index` 
-                Functions to control video time, image aspect, and synchronize two videos.
+                Funciones para controlar el tiempo de video, el aspecto de la imagen y sincronizar dos videos.
 
         .. container:: descr
 
@@ -39,7 +39,7 @@ You can also use the search function in the top left corner.
                 :target: annotation/index.html
 
             :doc:`/annotation/index`
-                Tools to annotate videos with drawings, text, highlight key moments and use posture references.
+                Herramientas para anotar videos con dibujos, texto, resaltar momentos clave y usar referencias de postura.
 
         .. container:: descr
 
@@ -47,15 +47,15 @@ You can also use the search function in the top left corner.
                 :target: measurement/index.html
 
             :doc:`/measurement/index`
-                Functions to calibrate space and time, measure intervals, positions, distances, angles, and track kinematics.
-
+                Funciones para calibrar espacio y tiempo, medir intervalos, posiciones, distancias, ángulos y seguir cinemáticas.
+                
         .. container:: descr
 
             .. figure:: /images/home/capture.jpg
                 :target: capture/index.html
 
             :doc:`/capture/index`
-                Subsystem to capture, delay, and record live cameras.
+                Subsistema para capturar, retardar y grabar cámaras en vivo.
 
         .. container:: descr
 
@@ -63,23 +63,23 @@ You can also use the search function in the top left corner.
                 :target: export/index.html
 
             :doc:`/export/index`
-                Functions to save videos and measurements for other applications.
+                Funciones para guardar videos y medidas para otras aplicaciones.
 
         .. container:: descr
 
             :doc:`/misc/index`
-                Various topics related to programmatically controlling Kinovea and general information about the project.
+                Diversos temas relacionados con el control programático de Kinovea e información general sobre el proyecto.
 
 
-This manual is maintained by volunteers.
-If you find something that is confusing, wrong, or otherwise needs to be edited,
-`let us know <https://github.com/Kinovea/kinovea-docs/issues>`__.
+Este manual es mantenido por voluntarios.
+Si encuentra algo que es confuso, incorrecto o necesita ser editado, háganoslo saber
+`aqui <https://github.com/Kinovea/kinovea-docs/issues>`__.
 
 
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: User interface
+    :caption: Interfaz de usuario
 
     userinterface/overview
     userinterface/workspaces
@@ -89,7 +89,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Observation and comparison
+    :caption: Observación y comparación
 
     observation/loading
     observation/playback_ui
@@ -102,7 +102,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Annotation
+    :caption: Anotación
 
     annotation/general
     annotation/tools
@@ -115,7 +115,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Measurement
+    :caption: Medición
 
     measurement/calibration
     measurement/guidelines
@@ -131,7 +131,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Capture
+    :caption: Captura
 
     capture/listing
     capture/userinterface
@@ -143,7 +143,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Export
+    :caption: Exportación
     
     export/video
     export/data
@@ -151,7 +151,7 @@ If you find something that is confusing, wrong, or otherwise needs to be edited,
 .. toctree::
     :titlesonly:
     :hidden:
-    :caption: Miscellaneous topics
+    :caption: Temas variados
 
     misc/faq
     misc/update
