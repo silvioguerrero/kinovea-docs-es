@@ -1,35 +1,34 @@
 
-Running multiple instances of Kinovea
+Ejecutando múltiples instancias de Kinovea
 =====================================
 
-It is possible to run multiple Kinovea at the same time on the same computer. 
-This can be used to record more than two cameras, play more than two videos at the same time, or create more advanced setups for capture and replay or instrumentation scenarios.
+Es posible ejecutar múltiples Kinovea al mismo tiempo en la misma computadora. 
+Esto se puede usar para grabar más de dos cámaras, reproducir más de dos videos al mismo tiempo o crear configuraciones más avanzadas para captura y reproducción o escenarios de instrumentación.
 
 
-.. note:: By default each instance has its own set of preferences separate from the others.
-    This behavior is controlled by the option under :menuselection:`Preferences --> General --> Instances have their own preferences`.
-    This option can only be changed from the first instance of Kinovea.
+.. note:: De forma predeterminada, cada instancia tiene su propio conjunto de preferencias separadas de las demás.
+    Este comportamiento está controlado por la opción bajo :menuselection:`Preferences --> General --> Instances have their own preferences`.
+    Esta opción solo se puede cambiar desde la primera instancia de Kinovea.
 
-Instance name
+Nombre de instancia
 --------------
-Each instance is assigned a number in sequential order of launch and by default this number becomes the name of the instance.
+A cada instancia se le asigna un número en orden secuencial de lanzamiento y, de forma predeterminada, este número se convierte en el nombre de la instancia.
 
-The name of the instance can be seen in the window title bar in square brackets.
+El nombre de la instancia se puede ver en la barra de título de la ventana entre corchetes.
 
 .. image:: /images/ui/instancename2.png
 
-It is possible to customize the name of instances by passing the new name in the :guilabel:`-name` argument on the command line.
+Es posible personalizar el nombre de las instancias pasando el nuevo nombre en el :guilabel:`-name` argumento en la línea de comando.
 
-.. code-block:: console
+.. code-block:: consola
 
-    kinovea.exe -name "MyInstance"
+    kinovea.exe -name "MiInstancia"
 
 .. image:: /images/ui/instancenamecustom.png
 
-See also: :doc:`/misc/command_line`.
+Vea también: :doc:`/misc/command_line`.
 
-.. tip:: Command line arguments can also be specified by creating a Windows shortcut on Kinovea.exe and editing the :guilabel:`Target` field in the shortcut properties.
-
+.. tip:: Los argumentos de la línea de comandos también se pueden especificar creando un acceso directo de Windows en Kinovea.exe y editando el :guilabel:`Target` campo en las propiedades del acceso directo.
 
 
 
