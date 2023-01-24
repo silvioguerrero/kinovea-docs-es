@@ -1,5 +1,5 @@
 
-Playback
+Reproducción
 ========
 
 
@@ -7,213 +7,213 @@ General
 -------
 .. image:: /images/preferences/playback_general.png
 
-Import image sequences as videos
+Importar secuencias de imágenes como videos
 ********************************
 
-When this option is enabled and an image file is opened, Kinovea will try to detect an **image sequence** by looking for consecutive numbers in the name of other files of the same folder.
-If an image sequence is detected, all the image files will automatically be loaded and the whole collection interpreted as a video.
+Cuando esta opción está habilitada y se abre un archivo de imagen, Kinovea intentará detectar una **secuencia de imágenes** buscando números consecutivos en el nombre de otros archivos de la misma carpeta.
+Si se detecta una secuencia de imágenes, todos los archivos de imágenes se cargarán automáticamente y toda la colección se interpretará como un video.
 
-Example of file names interpreted as a sequence:
+Ejemplo de nombres de archivos interpretados como una secuencia:
 
 - image_001.png, image_002.png, image_003.png, etc.
 - test01.jpg, test02.jpg, test03.jpg, etc.
 
-The numbers can be anywhere in the file name. 
-Aside from the numbers the rest of the name should be identical for all files. 
-The amount of leading zeroes in the numbering scheme should be consistent between all files of the sequence.
+Los números pueden estar en cualquier parte del nombre del archivo. 
+Aparte de los números, el resto del nombre debe ser idéntico para todos los archivos.
+La cantidad de ceros iniciales en el esquema de numeración debe ser consistente entre todos los archivos de la secuencia.
 
-A gap or a change in the numbering system will be interpreted as the end of the sequence.
-The detection is bidirectional: any file can be used to load the sequence, the resulting video will always start at the file with the lower number found.
+Un hueco o un cambio en el sistema de numeración se interpretará como el final de la secuencia.
+La detección es bidireccional: se puede usar cualquier archivo para cargar la secuencia, el video resultante siempre comenzará en el archivo con el número más bajo encontrado.
 
-Link speed sliders when comparing videos
+Controles deslizantes de velocidad de enlace al comparar videos
 ****************************************
 
-When this option is checked and two videos are compared, changing the playback speed in one player will automatically change the playback speed in the other player to match it.
+Cuando se marca esta opción y se comparan dos videos, cambiar la velocidad de reproducción en un reproductor cambiará automáticamente la velocidad de reproducción en el otro reproductor para que coincida.
 
-.. note:: The playback speed is matched according to the real time speed, taking into account differences in video file framerate and :doc:`capture framerate <../../observation/time_calibration>`.
-   If one video is in slow motion and the other is at normal speed, this option should still work as expected as long as the capture framerate of the slow motion video is correctly configured. 
+.. note:: La velocidad de reproducción se empareja de acuerdo con la velocidad en tiempo real, teniendo en cuenta las diferencias en la velocidad de fotogramas del archivo de video y :doc:`capture framerate <../../observation/time_calibration>`.
+   Si un video está en cámara lenta y el otro está a velocidad normal, esta opción aún debería funcionar como se espera, siempre que la velocidad de fotogramas de captura del video en cámara lenta esté configurada correctamente. 
 
-Update image during time cursor movement
+Actualizar imagen durante el movimiento del cursor de tiempo
 ****************************************
 
-When this option is not checked the video display will be paused when manually moving the timeline cursor.
+Cuando esta opción no está marcada, la visualización del video se pausará al mover manualmente el cursor de la línea de tiempo.
 
-Default aspect ratio
+Relación de aspecto predeterminada
 ********************
 
-This option defines the default image aspect ratio configured any time a video file is opened. It is the same as manually configuring the menu :menuselection:`Image --> Image format`.
+Esta opción define la relación de aspecto de imagen predeterminada configurada cada vez que se abre un archivo de video. Es lo mismo que configurar manualmente el menú :menuselection:`Image --> Image format`.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
-- :guilabel:`Auto detection`
-- :guilabel:`Force 4:3`
-- :guilabel:`Force 16:9`
+- :guilabel:`Auto detección`
+- :guilabel:`Forzar 4:3`
+- :guilabel:`Forzar 16:9`
 
-The :guilabel:`Auto detection` option uses the image size and the pixel aspect ratio found in the video file metadata to calculate the image height. 
-The other options will change the height of the video to match a 4:3 or 16:9 aspect ratio.
+La opción :guilabel:`Auto detección` utiliza el tamaño de la imagen y la relación de aspecto de píxeles encontrada en los metadatos del archivo de video para calcular la altura de la imagen. 
+Las otras opciones cambiarán la altura del video para que coincida con una relación de aspecto de 4:3 o 16:9.
 
-Always deinterlace when opening a new video
+Siempre desentrelazar al abrir un nuevo video
 *******************************************
 
-This option forces the deinterlacing mechanism to be enabled for all opened files. It is the same as manually configuring the menu :menuselection:`Image --> Deinterlace`.
+Esta opción obliga a habilitar el mecanismo de desentrelazado para todos los archivos abiertos. Es lo mismo que configurar manualmente el menú :menuselection:`Image --> Deinterlace`.
 
 
-Default annotations file
+Archivo de anotaciones predeterminado
 ************************
 
-This option lets you point to a .KVA file containing video annotations that will be automatically loaded when any video is opened.
+Esta opción le permite apuntar a un archivo .KVA que contiene anotaciones de video que se cargarán automáticamente cuando se abra cualquier video.
 
-Other annotations files can still be loaded on top of the video by using the sidecar file method or through the menu :menuselection:`File --> Load annotations`. They will be merged with each others.
+Todavía se pueden cargar otros archivos de anotaciones sobre el video usando el método de archivo sidecar o a través del menú :menuselection:`File --> Load annotations`. Se fusionarán entre sí.
 
-See also: :doc:`/annotation/annotation_files`.
+Vea también: :doc:`/annotation/annotation_files`.
 
 
 Memory
 ------
 .. image:: /images/preferences/playback_memory.png
 
-Cache memory allocated to each playback screen
+Memoria caché asignada a cada pantalla de reproducción
 **********************************************
 
-The cache memory is used to load the video content in system memory and speed up navigation.
-When the active video section (working zone) fits in the cache memory it will be automatically loaded into this cache. If the video section does not fit in the cache the memory will not be consumed.
+La memoria caché se utiliza para cargar el contenido de video en la memoria del sistema y acelerar la navegación.
+Cuando la sección de video activa (zona de trabajo) quepa en la memoria caché, se cargará automáticamente en esta caché. Si la sección de video no cabe en el caché, la memoria no se consumirá.
 
-When using side by side comparison each playback screen can use at most half the memory amount configured.
+Cuando se usa la comparación lado a lado, cada pantalla de reproducción puede usar como máximo la mitad de la cantidad de memoria configurada.
 
-In the case of multiple instances of Kinovea, each instance has its own cache memory.
+En el caso de varias instancias de Kinovea, cada instancia tiene su propia memoria caché.
 
 
-Units
+Unidades
 -----
 .. image:: /images/preferences/playback_units.png
 
-.. tip:: The unit for length is defined during the calibration process.
+.. tip:: La unidad de longitud se define durante el proceso de calibración.
 
 
-Time
+Tiempo
 ****
-This option controls the format of all time-related information displayed in the program [#f1]_. It is used in the timeline position and duration, in chronometers and clocks, and in exported files.
+Esta opción controla el formato de toda la información relacionada con el tiempo que se muestra en el programa [#f1]_. Se utiliza en la posición y duración de la línea de tiempo, en cronómetros y relojes, y en archivos exportados.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
 ================================    ==============   =========================
-Format                                Example         Description
+Formato                               Ejemplo         Descripción
 ================================    ==============   =========================
-[h:][mm:]ss.xx[x]                   1:10.48           Textual timecode.
-Frame number                        1762              Rank of the current frame.
-Total milliseconds                  70480             Integer number of milliseconds.
-Total microseconds                  1284              Integer number of microseconds.
-Ten thousandth of an hour           904               Ten thousandths of an hour
-Hundredth of a minute               542               Hundredths of a minute
-[h:][mm:]ss.xx[x] + Frame number    1:10.48 (1762)    
+[h:][mm:]ss.xx[x]                   1:10.48           Código de tiempo textual.
+Número de cuadro                    1762              Rango del cuadro actual.
+Milisegundos totales                70480             Número entero de milisegundos.
+Microsegundos totales               1284              Número entero de microsegundos.
+Diez milésimas de hora              904               Diez milésimas de hora
+Centésima de minuto                 542               Centésima de minuto
+[h:][mm:]ss.xx[x] + N° de cuadro    1:10.48 (1762)    
 ================================    ==============   =========================
 
-When using textual timecode if the real time framerate is higher than 100 fps, thousandths of seconds are displayed. Hours and minutes are only displayed when necessary.
+Al usar el código de tiempo textual si la velocidad de fotogramas en tiempo real es superior a 100 fps, se muestran las milésimas de segundo. Las horas y los minutos solo se muestran cuando es necesario.
 
-.. note:: The time starts at the **time origin**. The time origin can be configured to be anywhere in the video.
-   Video locations that are before the time origin are displayed as negative numbers.
-   If the time origin is not manually defined, the time origin is automatically set to the start of the current video section.
+.. note:: El tiempo comienza en el **origen del tiempo**. El origen de tiempo se puede configurar para que esté en cualquier parte del video.
+   Las ubicaciones de video anteriores al origen de la hora se muestran como números negativos.
+   Si el origen del tiempo no se define manualmente, el origen del tiempo se establece automáticamente al inicio de la sección de video actual.
 
-Speed
+Velocidad
 *****
 
-The unit for speed is used in the trajectory tool and in the :guilabel:`Linear kinematics` window when setting the measurement display option to :guilabel:`Speed`, :guilabel:`Horizontal velocity` or :guilabel:`Vertical velocity`.
-It is also used in the Angular kinematics window when using Tangential velocity.
+La unidad de velocidad se utiliza en la herramienta de trayectoria y en la :guilabel:`Cinemática lineal` ventana al configurar la opción de visualización de la medición en :guilabel:`Velocidad`, :guilabel:`Velocidad horizontal` or :guilabel:`Velocidad vertical`.
+También se usa en la ventana Cinemática angular cuando se usa la velocidad tangencial.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
 ================================   ============= 
-Unit                               Symbol
+Unidad                               Simbolo
 ================================   =============
-Meters per second                   m/s
-Kilometers per hour                 km/h
-Feet per second                     ft/s
-Miles per hour                      mph
+Metros por segundo                  m/s
+Kilometros por hora                 km/h
+Pies por segundo                    ft/s
+Millas por hora                     mph
 ================================   =============
 
-.. note:: If no spatial calibration has been performed the speed unit will automatically be **Pixels per second (px/s)**.
+.. note:: Si no se ha realizado ninguna calibración espacial, la unidad de velocidad será automáticamente **píxeles por segundo (px/s)**.
 
-Acceleration
+Aceleración
 ************
 
-The unit for acceleration is used in the trajectory tool and in the :guilabel:`Linear kinematics` window when setting the measurement display option to :guilabel:`Acceleration`, :guilabel:`Horizontal acceleration` or :guilabel:`Vertical acceleration`.
-It is also used in the :guilabel:`Angular kinematics` window when using :guilabel:`Tangential acceleration`, :guilabel:`Centripetal acceleration` or :guilabel:`Resultant acceleration`.
+La unidad de aceleración se utiliza en la herramienta de trayectoria y en la ventana :guilabel:`Cinemática lineal` al configurar la opción de visualización de medidas en :guilabel:`Aceleración`, :guilabel:`Aceleración horizontal` o :guilabel:`Aceleración vertical` .
+También se utiliza en la ventana :guilabel:`Cinemática angular` al utilizar :guilabel:`Aceleración tangencial`, :guilabel:`Aceleración centrípeta` o :guilabel:`Aceleración resultante`.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
 ================================   ============= 
-Unit                               Symbol
+Unidad                             Simbolo
 ================================   =============
-Meters per second squared          m/s²
-Feet per second squared            ft/s²
+Metros por segundos al cuadrado     m/s²
+Pies por segundos al cuadrado       ft/s²
 ================================   =============
 
-.. note:: If no spatial calibration has been performed the acceleration unit will automatically be **Pixels per second squared (px/s²)**.
+.. note:: Si no se ha realizado ninguna calibración espacial, la unidad de aceleración será automáticamente **píxeles por segundo al cuadrado (px/s²)**.
 
-Angle
+Ángulo
 *****
 
-The unit for angle is used in tools measuring angles and in the :guilabel:`Angular kinematics` window when setting the data source option to :guilabel:`Angle` or :guilabel:`Total displacement`.
+La unidad de ángulo se utiliza en las herramientas de medida de ángulos y en la ventana :guilabel:`Cinemática angular` al configurar la opción de fuente de datos en :guilabel:`Ángulo` o :guilabel:`Desplazamiento total`.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
 ================================   ============= 
-Unit                               Symbol
+Unidad                             Simbolo
 ================================   =============
-Degrees                             °
-Radians                             rad
+Grados                              °
+Radianes                            rad
 ================================   =============
 
-Angular velocity
+Velocidad angular
 ****************
 
-The unit for angular velocity is used in the :guilabel:`Angular kinematics` window when setting the data source option to :guilabel:`Angular velocity`.
+La unidad para la velocidad angular se utiliza en la ventana :guilabel:`Cinemática angular` al establecer la opción de fuente de datos en :guilabel:`Velocidad angular`.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
 ================================   ============= 
-Unit                               Symbol
+Unidad                             Simbolo
 ================================   =============
-Degrees per second                  deg/s
-Radians per second                  rad/s
-Revolutions per minute              rpm
+Grados por segundo                  deg/s
+Radianes por segundo                rad/s
+Revoluciones por minuto             rpm
 ================================   =============
 
 
-Angular acceleration
+Aceleración angular
 ********************
 
-The unit for angular acceleration is used in the :guilabel:`Angular kinematics` window when setting the data source to :guilabel:`Angular acceleration`.
+La unidad para la aceleración angular se utiliza en la ventana :guilabel:`Cinemática angular` al establecer la fuente de datos en :guilabel:`Aceleración angular`.
 
-The following options are available:
+Las siguientes opciones están disponibles:
 
-================================   ============= 
-Unit                               Symbol
-================================   =============
-Degrees per second squared          deg/s²
-Radians per second squared          rad/s²
-================================   =============
+==================================   ============= 
+Unidad                               Simbolo
+==================================   =============
+Grados por segundos al cuadrado         deg/s²
+Radianes por segundos al cuadrado       rad/s²
+==================================   =============
 
 
-Custom length unit
+Unidad de longitud personalizada
 ******************
 
-This option defines the name and symbol for an additional length unit.
-The built-in length units are: millimeters, centimeters, meters, inches, feet and yards.
+Esta opción define el nombre y el símbolo de una unidad de longitud adicional.
+Las unidades de longitud incorporadas son: milímetros, centímetros, metros, pulgadas, pies y yardas.
 
-This custom length unit will appear at the bottom of the length unit drop down in the spatial calibration dialogs.
+Esta unidad de longitud personalizada aparecerá en la parte inferior del menú desplegable de unidades de longitud en los cuadros de diálogo de calibración espacial.
 
-The scale factor between pixels and this unit is defined during the calibration process in the same manner as for other length units.
+El factor de escala entre píxeles y esta unidad se define durante el proceso de calibración de la misma manera que para otras unidades de longitud.
 
 .. figure:: /images/preferences/playback_units_custom.png
    :align: center
    
-   Using the custom length unit to add micrometers to the list of built-in length units.
+   Uso de la unidad de longitud personalizada para agregar micrómetros a la lista de unidades de longitud integradas.
 
 
 .. rubric:: Footnotes
 
-.. [#f1] With the exception of the time axis in the kinematic analysis dialogs. In these dialogs the time is always displayed numerically, either in milliseconds or normalized.
+.. [#f1] Con la excepción del eje de tiempo en los diálogos de análisis cinemático. En estos cuadros de diálogo, el tiempo siempre se muestra numéricamente, ya sea en milisegundos o normalizado.
 
 
 
