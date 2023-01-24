@@ -1,17 +1,17 @@
-Explorer panel
+Panel del explorador
 ==============
 
-The explorer panel is found on the left hand side of the main Kinovea window.
-It provides access to the file system and connected cameras.
+El panel del explorador se encuentra en el lado izquierdo de la ventana principal de Kinovea.
+Proporciona acceso al sistema de archivos y cámaras conectadas.
 
-To show or hide the explorer panel use the menu :menuselection:`View --> Explorer panel`, or the shortcut :kbd:`F4`.
+Para mostrar u ocultar el panel del explorador, use el menú :menuselection:`View --> Explorer panel`, o el atajo :kbd:`F4`.
 
-The explorer panel contains the following tabs:
+El panel del explorador contiene las siguientes pestañas:
 
 =========================    ========================
-|FileExplorer|               File explorer
-|ShortcutExplorer|           Shortcut explorer
-|CameraExplorer|             Camera explorer
+|FileExplorer|               Explorador de archivos
+|ShortcutExplorer|           Explorador de atajos
+|CameraExplorer|             Explorador de cámara
 =========================    ========================
 
 .. |FileExplorer| image:: /images/ui/icons/explorer_video.png
@@ -21,22 +21,22 @@ The explorer panel contains the following tabs:
 .. |CameraExplorer| image:: /images/ui/icons/explorer_camera.png
 
 
-File explorer
+Explorador de archivos
 -------------
-The file explorer shows a tree view of the folders on your computer.
-The bottom part of the tab shows a list of supported files found in the selected folder.
+El explorador de archivos muestra una vista de árbol de las carpetas en su computadora.
+La parte inferior de la pestaña muestra una lista de archivos admitidos que se encuentran en la carpeta seleccionada.
 
-Shortcut explorer
+Explorador de atajos
 -----------------
-The shortcut explorer shows a tree view of folders that were bookmarked as favorites.
+El explorador de accesos directos muestra una vista de árbol de las carpetas que se marcaron como favoritas.
 
-To add a shortcut to a folder in this list, right click the selected folder in the file explorer tab or in the shortcut tab and choose :menuselection:`Add to shortcuts`.
+Para agregar un acceso directo a una carpeta en esta lista, haga clic derecho en la carpeta seleccionada en la pestaña del explorador de archivos o en la pestaña de acceso directo y elija :menuselection:`Add to shortcuts`.
 
-You can also use the Shortcut toolbar in the shortcut panel to add and remove shortcuts.
+También puede usar la barra de herramientas de accesos directos en el panel de accesos directos para agregar y eliminar accesos directos.
 
-Camera explorer
+Explorador de cámaras
 ---------------
-The camera explorer shows a list of the cameras currently connected to the computer and a history of recently recorded videos.
+El explorador de cámaras muestra una lista de las cámaras actualmente conectadas a la computadora y un historial de videos grabados recientemente.
 
-The Manual connection button opens a dialog to manually add network cameras or camera simulators.
+El botón Conexión manual abre un cuadro de diálogo para agregar manualmente cámaras de red o simuladores de cámara.
 
