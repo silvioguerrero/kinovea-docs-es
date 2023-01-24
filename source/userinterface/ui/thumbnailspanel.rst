@@ -1,43 +1,43 @@
-Thumbnails panel
+Panel de miniaturas
 ================
 
-The thumbnails panel is displayed when there are no playback or capture screens loaded. 
-It shows thumbnails corresponding to the active tab of the explorer panel.
+El panel de miniaturas se muestra cuando no hay pantallas de captura o reproducción cargadas.
+Muestra miniaturas correspondientes a la pestaña activa del panel del explorador.
 
 .. image:: /images/ui/thumbnails.png
 
-In the case of the file explorer and shortcut tabs, it displays thumbnails of the files in the selected folder.
-In the case of the camera explorer it displays thumbnails of all the cameras connected to the computer.
+En el caso del explorador de archivos y las pestañas de acceso directo, muestra miniaturas de los archivos en la carpeta seleccionada.
+En el caso del explorador de cámaras, muestra miniaturas de todas las cámaras conectadas a la computadora.
 
 
-Size buttons
+Botones de tamaño
 ------------
 .. image:: /images/ui/sizebuttons.png
 
-The size buttons change the size of the thumbnails.
+Los botones de tamaño cambian el tamaño de las miniaturas.
 
-Explorer buttons
+Botones del explorador
 --------------------
 
 .. image:: /images/ui/explorerbuttons.png
 
-The explorer buttons change the active tab in the explorer panel.
-The rightmost button enable or disable full screen mode.
+Los botones del explorador cambian la pestaña activa en el panel del explorador.
+El botón más a la derecha habilita o deshabilita el modo de pantalla completa.
 
-Content preview
+Vista previa del contenido
 -------------------
-Thumbnails of video files contain multiple frames of the video.
-The extra frames can be viewed using the sections at the bottom of the thumbnail.
+Las miniaturas de los archivos de video contienen varios fotogramas del video.
+Los marcos adicionales se pueden ver usando las secciones en la parte inferior de la miniatura.
 
 .. image:: /images/ui/thumbnailpreview.png
 
-Metadata overlay
+Superposición de metadatos
 --------------------
-Some metadata can be overlaid on the thumbnails of videos or images. 
-To configure which metadata is overlaid right click the background of the explorer to bring up the context menu.
+Algunos metadatos se pueden superponer en las miniaturas de videos o imágenes.
+Para configurar qué metadatos se superponen, haga clic con el botón derecho en el fondo del explorador para que aparezca el menú contextual.
 
 .. image:: /images/ui/metadataoverlay.png
 
-Enabling the metadata :guilabel:`Kva file` will make it display "kva" on the thumbnail when annotations exist as a sidecar file to the main video.
+Habilitación de los metadatos :guilabel:`Kva file` hará que muestre "kva" en la miniatura cuando existan anotaciones como un archivo adicional al video principal.
 
 

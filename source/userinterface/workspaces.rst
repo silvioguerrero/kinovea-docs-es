@@ -1,21 +1,21 @@
 
-Workspaces
+Espacios de trabajo
 ==========
 
-A workspace in Kinovea is a specific arrangement of screens and their content.
+Un espacio de trabajo en Kinovea es una disposición específica de pantallas y su contenido.
 
-When Kinovea is started using a workspace it will reload the screens, reopen videos and cameras, and restart replay folder observers.
+Cuando Kinovea se inicia usando un espacio de trabajo, recargará las pantallas, reabrirá videos y cámaras, y reiniciará los observadores de la carpeta de reproducción.
 
-Default workspace
+Espacio de trabajo predeterminado
 -----------------
-You can save the current arrangement of screens as the default workspace by using the menu :menuselection:`Options --> Workspace --> Save as default workspace`.
-The next time Kinovea starts it will read this workspace and reload the videos and cameras accordingly.
+Puede guardar la disposición actual de las pantallas como espacio de trabajo predeterminado utilizando el menú :menuselection:`Options --> Workspace --> Save as default workspace`.
+La próxima vez que se inicie Kinovea, leerá este espacio de trabajo y volverá a cargar los videos y las cámaras en consecuencia.
 
-To delete the default workspace and make Kinovea starts normally on the thumbnail explorer use the menu :menuselection:`Options --> Workspace --> Forget default workspace`.
+Para eliminar el espacio de trabajo predeterminado y hacer que Kinovea se inicie normalmente en el explorador de miniaturas, use el menú :menuselection:`Options --> Workspace --> Forget default workspace`.
 
-Exporting workspaces
+Exportación de espacios de trabajo
 --------------------
-Workspaces can be exported to separate XML files using the menu :menuselection:`Options --> Workspaces --> Export workspace`.
-To start Kinovea using an explicit workspace file it must be passed as an argument to the command line. 
+Los espacios de trabajo se pueden exportar a archivos XML separados usando el menú :menuselection:`Options --> Workspaces --> Export workspace`.
+Para iniciar Kinovea utilizando un archivo de espacio de trabajo explícito, debe pasarse como argumento a la línea de comando.
 
-See also: :doc:`/misc/command_line`.
+Vea también: :doc:`/misc/command_line`.
