@@ -1,12 +1,12 @@
 
-Preference pages
+Páginas de preferencias
 ================
 
-The Kinovea preferences contain settings to control how Kinovea behaves. 
+Las preferencias de Kinovea contienen configuraciones para controlar cómo se comporta Kinovea.
 
-The various pages are reached by clicking on the buttons at the top of the dialog. Each page may contain multiple tabs.
+Se accede a las distintas páginas haciendo clic en los botones en la parte superior del cuadro de diálogo. Cada página puede contener varias pestañas.
 
-The following preference pages are available:
+Las siguientes páginas de preferencias están disponibles:
 
 .. toctree::
    :maxdepth: 1
