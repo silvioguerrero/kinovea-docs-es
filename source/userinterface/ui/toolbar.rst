@@ -1,17 +1,17 @@
-Main toolbar
+Barra de herramientas principal
 ============
 
-The main toolbar provides quick access to screen organization functions.
+La barra de herramientas principal proporciona un acceso rápido a las funciones de organización de la pantalla.
 
 ================================================    ========================
-|Open| Open                                         Opens a video in a playback screen.
-|Save| Save                                         Saves annotations to the current KVA file.
-|Explorer| Thumbnail explorer                       Closes screens and displays the thumbnails panel
-|Playback| Playback screen                          Opens one playback screen.
-|DualPlayback| Dual playback screen                 Opens two playback screens.
-|Capture| Capture screen                            Opens one capture screen.
-|DualCapture| Dual capture screen                   Opens two capture screens.
-|Hybrid| Capture and Playback                       Opens one playback screen and one capture screen.
+|Open| Abrir                                        Abre un video en una pantalla de reproducción.
+|Save| Guardar                                      Guarda las anotaciones en el archivo KVA actual.
+|Explorer| Explorador de miniaturas                 Cierra las pantallas y muestra el panel de miniaturas.
+|Playback| Pantalla de reproducción                 Abre una pantalla de reproducción.
+|DualPlayback| Pantalla de reproducción dual        Abre dos pantallas de reproducción.
+|Capture| Captura de pantalla                       Abre una pantalla de captura.
+|DualCapture| Pantalla de captura dual              Abre dos pantallas de captura.
+|Hybrid| Captura y reproducción                     Abre una pantalla de reproducción y una pantalla de captura.
 ================================================    ========================
 
 .. |Open| image:: /images/ui/icons/folder.png
