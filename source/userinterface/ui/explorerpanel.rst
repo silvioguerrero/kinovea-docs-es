@@ -38,5 +38,5 @@ Explorador de cámaras
 ---------------
 El explorador de cámaras muestra una lista de las cámaras actualmente conectadas a la computadora y un historial de videos grabados recientemente.
 
-El botón Conexión manual abre un cuadro de diálogo para agregar manualmente cámaras de red o simuladores de cámara.
+El botón de "conexión manual" abre un cuadro de diálogo para agregar manualmente cámaras de red o simuladores de cámara.
 
