@@ -1,8 +1,8 @@
 
-Main window user interface
+Interfaz de usuario de la ventana principal
 ==============================
 
-The Kinovea main window comprises the following areas:
+La ventana principal de Kinovea comprende las siguientes áreas:
 
 .. image:: /images/ui/mainwindow.png
 
@@ -16,7 +16,7 @@ The Kinovea main window comprises the following areas:
    ui/screenspanel
 
 
-For a description of the individual screen types see :doc:`/observation/playback_ui` and :doc:`/capture/userinterface`
+Para obtener una descripción de los tipos de pantalla individuales, consulte :doc:`/observation/playback_ui` y :doc:`/capture/userinterface`
    
 
 
