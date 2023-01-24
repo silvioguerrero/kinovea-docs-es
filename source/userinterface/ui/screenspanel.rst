@@ -1,13 +1,13 @@
-Screens panel
+Panel de pantallas
 =============
 
-The screens panel replaces the thumbnails panel when one or more screens are opened.
-When two screens of the same type are opened, joint controls are added at the bottom.
+El panel de pantallas reemplaza al panel de miniaturas cuando se abren una o más pantallas.
+Cuando se abren dos pantallas del mismo tipo, se agregan controles conjuntos en la parte inferior.
 
-Adding and removing screens can be done by using the main toolbar, the menu View or the close buttons on the screens themselves.
+Se pueden agregar y eliminar pantallas usando la barra de herramientas principal, el menú Ver, o los botones de cierre en las pantallas mismas.
 
-To swap the screens use the menu :menuselection:`View --> Swap screens` or the swap button in the joint controls.
+Para intercambiar las pantallas utilice el menú :menuselection:`View --> Swap screens` o el botón de intercambio en los controles conjuntos.
 
-More details about the playback screen user interface can be found at :doc:`/observation/playback_ui`
+Se pueden encontrar más detalles sobre la interfaz de usuario de la pantalla de reproducción en :doc:`/observation/playback_ui`
 
-More details about the capture screen user interface can be found at :doc:`/capture/userinterface`
+Se pueden encontrar más detalles sobre la interfaz de usuario de la pantalla de captura en :doc:`/capture/userinterface`
