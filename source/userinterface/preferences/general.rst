@@ -6,29 +6,29 @@ General
 -------
 .. image:: /images/preferences/general_general.png
 
-Language
+Idioma
 ********
-This option lets you change the language of Kinovea's user interface.
+Esta opción le permite cambiar el idioma de la interfaz de usuario de Kinovea.
 
-The translations are contributed by the community. 
-If you would like to contribute please check the translation project at `Weblate <https://hosted.weblate.org/engage/kinovea/>`__.
+Las traducciones son aportadas por la comunidad. 
+Si desea contribuir, consulte el proyecto de traducción en `Weblate <https://hosted.weblate.org/engage/kinovea/>`__.
 
-Number of files in history
+Número de archivos en la historia
 **************************
-This options controls how many recently opened files and replay folders are remembered and listed under the menu :menuselection:`File --> Recent`.
+Esta opción controla cuántos archivos abiertos recientemente y carpetas de reproducción se recuerdan y enumeran en el menú :menuselection:`File --> Recent`.
 
-Allow multiple instances of Kinovea
+Permitir múltiples instancias de Kinovea
 ***********************************
-When this checkbox is checked it is possible to run multiple Kinovea at the same time. This can be used to record more than two cameras or play more than two videos at the same time. 
-Each instance is identified by a name or a number. 
+Cuando esta casilla de verificación está marcada, es posible ejecutar varios Kinovea al mismo tiempo. Esto se puede usar para grabar más de dos cámaras o reproducir más de dos videos al mismo tiempo.
+Cada instancia se identifica con un nombre o un número. 
 
-See also: :doc:`../instances`.
+Vea también: :doc:`../instances`.
 
-.. note:: Video synchronization does not work across different instances.
+.. note:: La sincronización de video no funciona en diferentes instancias.
 
 
-Instances have their own preferences
+Las instancias tienen sus propias preferencias.
 ************************************
-When this checkbox is checked each instance of Kinovea will maintain its own preferences, independently of all other instances. 
-This option is only available in the first instance started.
+Cuando esta casilla de verificación está marcada, cada instancia de Kinovea mantendrá sus propias preferencias, independientemente de todas las demás instancias. 
+Esta opción solo está disponible en la primera instancia iniciada.
 
