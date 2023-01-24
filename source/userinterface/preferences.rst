@@ -1,5 +1,5 @@
 
-Páginas de preferencias
+Página de preferencias
 ================
 
 Las preferencias de Kinovea contienen configuraciones para controlar cómo se comporta Kinovea.
