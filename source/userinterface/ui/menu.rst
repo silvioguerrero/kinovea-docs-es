@@ -1,101 +1,102 @@
-Main menu
+Menú principal
 =========
 
-File
+Archivo
 ----
 
-================================    ========================
-Open video…                         Opens a video file in a playback screen.
-Open replay folder observer…        Selects a folder to monitor.
-Load annotations…                   Merges a KVA file into the current video.
-Recent                              Displays a list of recently opened videos.
-Save annotations                    Saves the current annotations file.
-Save annotations as…                Saves the annotations to a specific file.
-Export video                        Saves the video with annotations painted on.
-Export to spreadsheet               Saves annotations to one of several spreadsheet formats.
-Close                               Closes the video.
-Quit                                Closes Kinovea.
-================================    ========================
+================================       ========================
+Abrir video…                           Abre un archivo de video en una pantalla de reproducción.
+Abrir carpeta de reproducción…         Selecciona una carpeta para monitorear.
+Cargar anotaciones…                    Combina un archivo KVA en el video actual.
+Reciente                               Muestra una lista de videos abiertos recientemente.
+Guardar anotaciones                    Guarda el archivo de anotaciones actual.
+Guardar anotaciones como…              Guarda las anotaciones en un archivo específico.
+Exportar video                         Guarda el video con anotaciones pintadas.
+Exportar a hoja de cálculo             Guarda las anotaciones en uno de los múltiples formatos de hoja de cálculo disponibles.
+Cerrar                                 Cierra el video.
+Quitar                                 Cierra Kinovea.
+================================       ========================
 
 
-Edit
-----
-
-=============================       ========================
-Undo                                Moves back in the drawings operations history.
-Redo                                Moves forward in the drawings operations history.
-Cut drawing                         Places the active drawing in Kinovea's clipboard and deletes it.
-Copy drawing                        Places the active drawing in Kinovea's clipboard.
-Paste drawing                       Pastes the drawing from Kinovea's clipboard.
-=============================       ========================
-
-
-View
+Editar
 ----
 
 =============================       ========================
-File explorer                       Shows or hides the explorer panel.
-Full screen                         Places Kinovea in full screen mode.
-One playback screen                 Resets the workspace to one playback screen.
-Two playback screens                Resets the workspace to two playback screens.
-One capture screen                  Resets the workspace to one playback screen.
-Two capture screens                 Resets the workspace to two playback screens.
-Invert screens                      Swaps screens.
-Show/Hide common controls           Shows or hides the joint controls.
+Deshacer                            Retrocede en el historial de operaciones con dibujos.
+Rehacer                             Avanza en el historial de operaciones con dibujos.
+Cortar dibujo                       Coloca el dibujo activo en el portapapeles de Kinovea y lo elimina.
+Copiar dibujo                       Coloca el dibujo activo en el portapapeles de Kinovea.
+Pegar dibujo                        Pega el dibujo del portapapeles de Kinovea.
 =============================       ========================
 
 
-Image
+Vista
+----
+
+=============================       ========================
+Explorador de archivos              Muestra u oculta el panel del explorador.
+Pantalla completa                   Coloca Kinovea en modo de pantalla completa.
+Una pantalla de reproducción        Restablece el espacio de trabajo a una pantalla de reproducción.
+Dos pantallas de reproducción       Restablece el espacio de trabajo a dos pantallas de reproducción.
+Una pantalla de captura             Restablece el espacio de trabajo a una pantalla de captura.
+Dos pantallas de captura            Establece el espacio de trabajo en dos pantallas de captura.
+Invertir pantallas                  Intercambia pantallas.
+Mostrar controles comunes           Muestra los controles comunes.
+Ocultar controles comunes           Oculta los controles comunes.
+=============================       ========================
+
+
+Imagen
 -----
 
 =============================       ========================
-Image format                        Forces the aspect ratio of the images to a preset value.
-Image rotation                      Rotates the video or camera images.
-Mirror                              Flips the video or camera images horizontally.
-Demosaicing                         Performs color reconstruction on raw videos.
-Deinterlace                         Removes interlacing artifacts.
+Formato de imagen                   Fuerza la relación de aspecto de las imágenes a un valor predeterminado.
+Rotacion de imagen                  Gira las imágenes de video o de la cámara.
+Espejo                              Voltea el video o las imágenes de la cámara horizontalmente.
+Ddemostración                       Realiza la reconstrucción de color en videos sin procesar.
+Desentrelazado                      Elimina los artefactos entrelazados.
 =============================       ========================
 
 Video
 -----
 
 =============================       ========================
-Configure video timing…             Opens a dialog to change the capture framerate or the nominal framerate.
-Overview…                           Displays a mosaic of the images in the video.
-Reverse…                            Inverts the order of the video frames.
+Configure video timing...           Abre un cuadro de diálogo para cambiar la velocidad de fotogramas de captura o la velocidad de fotogramas nominal.
+Descripción general…                Muestra un mosaico de las imágenes del vídeo.
+Inverso…                            Invierte el orden de los cuadros de video.
 =============================       ========================
 
-Tools
+Herramientas
 -----
 
 =============================       ========================
-Observational reference             Displays preset drawings that can be addded to the active video.
-Camera test grid                    Displays a test pattern to the active capture screen.
-Coordinate system                   Shows or hides the coordinate system on the active video.
-Camera calibration                  Displays the lens distortion calibration dialog.
-Scatter diagram…                    Displays the scatter diagram dialog.
-Linear kinematics…                  Displays the linear kinematics plot.
-Angualr kinematics…                 Displays the angular kinematics plot.
-Angle-angle diagram…                Displays the angle-angle plot.
+Referencia observacional            Muestra dibujos preestablecidos que se pueden agregar al video activo.
+Cuadrícula de prueba de cámara      Muestra un patrón de prueba en la pantalla de captura activa.
+Sistema de coordenadas              Muestra u oculta el sistema de coordenadas en el video activo.
+Calibración de cámara               Muestra el cuadro de diálogo de calibración de la distorsión de la lente.
+Diagrama de dispersión…             Muestra el cuadro de diálogo del diagrama de dispersión.
+Cinemática lineal…                  Muestra el gráfico de cinemática lineal.
+Cinemática angular…                 Muestra el gráfico de cinemática angular.
+Diagrama ángulo-ángulo…             Muestra el gráfico ángulo-ángulo.
 =============================       ========================
 
-Options
+Opciones
 -------
 
 =============================       ========================
-Language                            Changes the language of the user interface.
-Time                                Changes the preferred time representation.
-Workspace                           Saves or exports the current state of the screens.
-Preferences                         Opens the preference pages.
+Idioma                              Cambia el idioma de la interfaz de usuario.
+Tiempo                              Cambia la representación de tiempo preferida.
+Espacio de trabajo                  Guarda o exporta el estado actual de las pantallas.
+Preferencias                        Abre las páginas de preferencias.
 =============================       ========================
 
-Help
+Ayuda
 -----
 
 =============================       ========================
-Check for updates…                  Checks if a new version of Kinovea is available.
-Open log folder…                    Opens Kinovea's application data folder.
-www.kinovea.org                     Opens Kinovea's website in the default web browser.
-About Kinovea…                      Opens the About dialog.
+Buscar actualizaciones...           Comprueba si hay disponible una nueva versión de Kinovea.
+Abrir carpeta de registro…          Abre la carpeta de datos de la aplicación de Kinovea.
+www.kinovea.org                     Abre el sitio web de Kinovea en el navegador web predeterminado.
+About Kinovea…                      Abre el cuadro de diálogo Acerca de.
 =============================       ========================
 
