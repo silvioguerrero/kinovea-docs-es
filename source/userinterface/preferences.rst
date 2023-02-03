@@ -11,7 +11,7 @@ Las siguientes páginas de preferencias están disponibles:
 .. toctree::
    :maxdepth: 1
 
-   preferences/general
+   preferences/generales
    preferences/playback
    preferences/drawings
    preferences/capture
