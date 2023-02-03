@@ -1,89 +1,89 @@
 
-Drawings
+Dibujos
 ========
 
 General
 -------
 .. image:: /images/preferences/drawings_general.png
 
-Show drawings when video is playing
+Mostrar dibujos cuando se reproduce el video
 ***********************************
 
-This option controls whether drawings are visible or not when the video is in continuous playback.  
+Esta opción controla si los dibujos son visibles o no cuando el video está en reproducción continua.  
 
-Enable coordinates filtering
+Habilitar filtrado de coordenadas
 ****************************
 
-This option controls the filtering of spatial coordinates for trajectories and tracked drawings. 
-Due to the digitization process the raw coordinates are noisy and the resulting quantities, especially derivatives like speed and acceleration, are less accurate than they could be. 
-Carefully filtering the coordinates remove a lot of this noise and provide more accurate measurements.
+Esta opción controla el filtrado de coordenadas espaciales para trayectorias y dibujos rastreados.
+Debido al proceso de digitalización, las coordenadas sin procesar son ruidosas y las cantidades resultantes, especialmente las derivadas como la velocidad y la aceleración, son menos precisas de lo que podrían ser.
+El filtrado cuidadoso de las coordenadas elimina gran parte de este ruido y proporciona mediciones más precisas.
 
-You can uncheck this option if you would rather export the raw coordinates and perform the filtering yourself.
+Puede desmarcar esta opción si prefiere exportar las coordenadas sin procesar y realizar el filtrado usted mismo.
 
-.. tip:: For more in-depth information on the exact filtering approach and algorithms used, refer to the About page of the Linear kinematics window.
+.. tip:: Para obtener información más detallada sobre el enfoque de filtrado exacto y los algoritmos utilizados, consulte la página "Acerca de" de la ventana "Cinemática lineal".
 
 
-Enable custom tools debug mode
+Habilitar el modo de depuración de herramientas personalizadas
 ******************************
 
-When this checkbox is ticked custom tools will display extra information about the name and relations of points, handles and segments. 
-This option can be used by tool authors to facilitate design.
+Cuando esta casilla de verificación está marcada, las herramientas personalizadas mostrarán información adicional sobre el nombre y las relaciones de puntos, puntos de control y segmentos.
+Los autores de herramientas pueden utilizar esta opción para facilitar el diseño.
 
 See also: :doc:`/annotation/tools`.
 
 
-Opacity
+Opacidad
 -------
 .. image:: /images/preferences/drawings_opacity.png
 
-The options on this tab control the default visibility of drawings. Drawings can be customized independently by bringing their context menu and selecting options in the Visibility sub menus. 
+Las opciones de esta pestaña controlan la visibilidad predeterminada de los dibujos. Estos se pueden personalizar de forma independiente trayendo su menú contextual y seleccionando opciones en los submenús de Visibilidad.
 
-In the most general case a drawing's visibility over time follows the following pattern:
+En el caso más general, la visibilidad de un dibujo a lo largo del tiempo sigue el siguiente patrón:
 
 .. image:: /images/preferences/opacity.png
 
 
-Visible for the entire video
+Visible para todo el video
 ****************************
 
-When this option is checked new drawings are visible for the entirety of the video. The opaque duration and fading duration options are ignored.
+Cuando esta opción está marcada, los nuevos dibujos son visibles para la totalidad del video. Las opciones de duración opaca y duración de desvanecimiento se ignoran.
 
-Maximum opacity
+Máxima opacidad
 ***************
 
-This option controls the opacity used during the opaque section. 
-A value of 100% means the drawing will not let the background show through. 
-A value less than 100% means the drawing will be somewhat transparent.
+Esta opción controla la opacidad utilizada durante la sección opaca.
+Un valor del 100% significa que el dibujo no permitirá que se vea el fondo.
+Un valor inferior al 100% significa que el dibujo tendrá cierto grado de transparencia.
 
 
-Opaque duration
+Duración de la opcacidad
 ***************
 
-This option controls how long the drawing stays at its maximum opacity level before fading out. This section starts at the keyframe onto which the drawing was added.
+Esta opción controla cuánto tiempo permanece el dibujo en su nivel máximo de opacidad antes de desaparecer. Esta sección comienza en el fotograma clave en el que se agregó el dibujo.
 
-Fading duration
+Duración del desvanecimiento
 ***************
 
-This option controls the duration of the ramps before and after the maximum opacity, until the drawing becomes completely invisible.
+Esta opción controla la duración de las rampas antes y después de la opacidad máxima, hasta que el dibujo se vuelve completamente invisible.
 
 
-Tracking
+Seguimiento
 --------
 .. image:: /images/preferences/drawings_tracking.png
 
-The options on this page control the default parameters for trajectories and drawing tracking.
-Trajectories can also be configured independently by bringing their context menu and going in their configuration window. 
-The tracking parameters of other drawings cannot be modified after creation.
+Las opciones de esta página controlan los parámetros predeterminados para las trayectorias y el seguimiento del dibujo.
+Las trayectorias también se pueden configurar de forma independiente trayendo su menú contextual y accediendo a su ventana de configuración.
+Los parámetros de seguimiento de otros dibujos no se pueden modificar después de la creación.
 
-Object window
+Ventana de objetos
 *************
-The object window size defines the size of the patch of image around the tracked point that is being looked for in other frames. 
-This should be set to be as small as possible in order to avoid including the background in the tracked patch.
+El tamaño de la ventana del objeto define el tamaño del parche de imagen alrededor del punto rastreado que se busca en otros marcos.
+Esto debe establecerse para que sea lo más pequeño posible para evitar incluir el fondo en el parche rastreado.
 
-Search window
+Ventana de búsqueda
 *************
-The search window size defines the area in which the point is looked for. 
-This should be large enough to compensate for the object change of position from one frame to the next. 
-However search window too large can lead to the tracking algorithm picking a different object in another part of the image, if this object looks similar to the tracked object.
+El tamaño de la ventana de búsqueda define el área en la que se busca el punto.
+Esto debería ser lo suficientemente grande para compensar el cambio de posición del objeto de un cuadro al siguiente.
+Sin embargo, la ventana de búsqueda demasiado grande puede hacer que el algoritmo de seguimiento seleccione un objeto diferente en otra parte de la imagen, si este objeto se parece al objeto rastreado.
 
-.. tip:: Use the trajectory tool configuration dialog to visually figure out the appropriate size of the object and search windows.
+.. tip:: Utilice el cuadro de diálogo de configuración de la herramienta de trayectoria para determinar visualmente el tamaño adecuado del objeto y las ventanas de búsqueda.
