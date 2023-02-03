@@ -1,186 +1,186 @@
 
-Capture
+Captura
 =======
 
 General
 -------
 .. image:: /images/preferences/capture_general.png
 
-Record uncompressed video
+Grabar video sin comprimir
 *************************
-When this option is checked the video are recorded without compressing the video frames to JPEG first. 
-When this option is unchecked the video frames are compressed to JPEG using high quality settings to retain fidelity.
+Cuando esta opción está marcada, el video se graba sin comprimir primero los cuadros de video a JPEG.
+Cuando esta opción no está marcada, los cuadros de video se comprimen a JPEG utilizando configuraciones de alta calidad para conservar la fidelidad.
 
-This option can be used to minimize dropped frames, by trading off space for speed (due to the JPEG settings used, image quality shouldn't really be much impacted by this option).
-When using a fast storage medium it can be faster to store the large uncompressed images compared to the time it takes to compress them.
+Esta opción se puede utilizar para minimizar los fotogramas perdidos, intercambiando espacio por velocidad (debido a la configuración de JPEG utilizada, la calidad de la imagen no debería verse muy afectada por esta opción).
+Cuando se utiliza un medio de almacenamiento rápido, puede ser más rápido almacenar las imágenes grandes sin comprimir en comparación con el tiempo que lleva comprimirlas.
 
-For image snapshots the compression depends on the file format.
+Para instantáneas de imágenes, la compresión depende del formato de archivo.
 
-.. note:: When configuring cameras to use MJPEG streams this option is ignored. The MJPEG streams are always saved as-is in their container format.
+.. note:: Cuando se configuran las cámaras para usar secuencias MJPEG, esta opción se ignora. Las transmisiones MJPEG siempre se guardan tal cual en su formato de contenedor.
 
-.. note:: When configuring cameras to use raw Bayer pattern images you must enable this option to be able to reconstruct the color information at playback time.
+.. note:: Al configurar las cámaras para usar imágenes de patrón Bayer sin procesar, debe habilitar esta opción para poder reconstruir la información de color en el momento de la reproducción.
 
-.. warning:: Not all video players can play back uncompressed files.
+.. warning:: No todos los reproductores de video pueden reproducir archivos sin comprimir.
 
 
-Display framerate
+Mostrar velocidad de fotogramas
 *****************
-This option defines the frequency at which the camera images are updated in the capture screen.
+Esta opción define la frecuencia con la que se actualizan las imágenes de la cámara en la pantalla de captura.
 
-While recording the computer resources are shared between displaying the camera stream and recording it to the storage medium. 
-The highest priority is always given to recording but lowering this value can help reduce the overall load on the computer and improve recording performance.
+Mientras se graba, los recursos de la computadora se comparten entre mostrar el flujo de la cámara y grabarlo en el medio de almacenamiento.
+La prioridad más alta siempre se le da a la grabación, pero reducir este valor puede ayudar a reducir la carga general en la computadora y mejorar el rendimiento de la grabación.
 
-Image format
+Formato de imagen
 ************
-This option defines the default image format used when saving snapshots.
+Esta opción define el formato de imagen predeterminado utilizado al guardar instantáneas.
 
-The following image formats are available:
+Están disponibles los siguientes formatos de imagen:
 
 - :guilabel:`JPG`
 - :guilabel:`PNG`
 - :guilabel:`BMP`
 
 
-Video format
+Formato de video
 ************
-This option defines the default video container format used when recording compressed videos. All videos are compressed using an MJPEG codec.
+Esta opción define el formato de contenedor de video predeterminado que se usa al grabar videos comprimidos. Todos los videos están comprimidos usando un códec MJPEG.
 
-The following container formats are available:
+Están disponibles los siguientes formatos de contenedor:
 
 - :guilabel:`MP4`
 - :guilabel:`AVI`
 - :guilabel:`MKV`
 
-Uncompressed video format
+Formato de video sin comprimir
 *************************
-This option defines the default video container format used when recording uncompressed videos.
+Esta opción define el formato de contenedor de video predeterminado que se usa al grabar videos sin comprimir.
 
-The following container formats are available:
+Están disponibles los siguientes formatos de contenedor:
 
 - :guilabel:`MKV`
 - :guilabel:`AVI`
 
 
-Default annotations file
+Archivo de anotaciones predeterminado
 ************************
-This option lets you point to a .KVA file containing annotations that will be automatically loaded when any camera stream is opened.
+Esta opción le permite apuntar a un archivo .KVA que contiene anotaciones que se cargarán automáticamente cuando se abra cualquier flujo de cámara.
 
-Other annotations files can still be loaded on top of the camera stream by using the menu :menuselection:`File --> Load annotations`. They will be merged with each others.
+Todavía se pueden cargar otros archivos de anotaciones en la parte superior de la transmisión de la cámara usando el menú :menuselection:`Archivo --> Cargar anotaciones`. Se fusionarán entre sí.
 
 See also: :doc:`/annotation/annotation_files`.
 
-Memory
+Memoria
 ------
 .. image:: /images/preferences/capture_memory.png
 
-Memory allocated for delay buffers
+Memoria asignada para búferes de retardo
 **********************************
 
-This option controls the amount of memory used to remember old frames, in the context of the delayed view of the camera feed.
-By extension, this option defines the maximum delay configurable in the capture screen. The maximum delay is based on image size, image format and capture framerate.
+Esta opción controla la cantidad de memoria utilizada para recordar fotogramas antiguos, en el contexto de la vista retrasada de la transmisión de la cámara.
+Por extensión, esta opción define el retardo máximo configurable en la pantalla de captura. El retraso máximo se basa en el tamaño de la imagen, el formato de la imagen y la velocidad de fotogramas de captura.
 
-When using two capture screens at the same time each screen uses half the memory amount configured.
+Cuando se usan dos capturas de pantalla al mismo tiempo, cada pantalla usa la mitad de la cantidad de memoria configurada.
 
-In the case of multiple instances of Kinovea, each instance has its own delay buffer memory.
+En el caso de varias instancias de Kinovea, cada instancia tiene su propia memoria de búfer de retardo.
 
-.. warning:: Unlike the cache memory in the playback screen, this amount of memory is always allocated and used as soon as a capture screen is opened.
+.. warning:: A diferencia de la memoria caché en la pantalla de reproducción, esta cantidad de memoria siempre se asigna y utiliza tan pronto como se abre una pantalla de captura.
 
-Recording
+Grabación
 ---------
 .. image:: /images/preferences/capture_recording.png
 
-Recording mode and delay
+Modo de grabación y retardo
 ************************
 
-The recording mode option defines how the recording sub-system interacts with the delay buffer to create the output video.
+La opción de modo de grabación define cómo el subsistema de grabación interactúa con el búfer de retardo para crear el video de salida.
 
-When the camera transmits a new frame it is always put in the delay buffer and the recording sub-system always takes frames from the delay buffer to create the output video. 
+Cuando la cámara transmite un nuevo cuadro, siempre se coloca en el búfer de retardo y el subsistema de grabación siempre toma cuadros del búfer de retardo para crear el vídeo de salida.
 
 
-Camera
+Camara
 ^^^^^^
-When using this recording mode the delay value set in the capture screen is ignored. 
+Cuando se utiliza este modo de grabación, se ignora el valor de retardo establecido en la pantalla de captura.
 
-Recording is performed on the fly, the saved frame is always the most recent frame sent by the camera. 
+La grabación se realiza sobre la marcha, el cuadro guardado es siempre el cuadro más reciente enviado por la cámara.
 
-.. tip:: If you do not require recording of delayed images this option can result in slightly better performances than the Delayed method.
+.. tip:: Si no necesita la grabación de imágenes retrasadas, esta opción puede resultar en un rendimiento ligeramente mejor que el método Retrasado.
 
-Delayed
+Retrasado
 ^^^^^^^
-When using this recording mode the delay value set in the capture screen is taken into account. 
+Cuando se utiliza este modo de grabación, se tiene en cuenta el valor de retardo establecido en la pantalla de captura.
 
-Recording is performed on the fly, the saved frame is taken from the delay buffer based on the delay value.
+La grabación se realiza sobre la marcha, el cuadro guardado se toma del búfer de retraso en función del valor de retraso.
 
-This can be used to record actions happening before the moment the record button is hit or triggered.
+Esto se puede usar para registrar acciones que suceden antes del momento en que se presiona o activa el botón de grabación.
 
-Retroactive
+Retroactivo
 ^^^^^^^^^^^
-When using this recording mode the recording is not performed on the fly. 
-Instead, at the end of the recording process, when clicking the stop recording button or when the maximum recording duration is reached, the camera feed is paused, the delay buffer is frozen, and the video file is created all at once.
+Cuando se utiliza este modo de grabación, la grabación no se realiza sobre la marcha.
+En cambio, al final del proceso de grabación, al hacer clic en el botón de detener la grabación o cuando se alcanza la duración máxima de la grabación, la transmisión de la cámara se detiene, el búfer de demora se congela y el archivo de video se crea todo a la vez.
 
-The delay value is taken into account for creating the recording.
+El valor de retardo se tiene en cuenta para crear la grabación.
 
-This mode offers the best recording performances and minimizes dropped frames, at the cost of a reduced maximum length for created videos and a temporary freezing of the camera feed.
+Este modo ofrece los mejores rendimientos de grabación y minimiza los cuadros perdidos, a costa de una duración máxima reducida para los videos creados y una congelación temporal de la transmisión de la cámara.
 
-.. tip:: The maximum length of recorded videos using this recording mode depends on the size of the delay buffer. This can be configured from the Memory preference page.
+.. tip:: La duración máxima de los videos grabados con este modo de grabación depende del tamaño del búfer de demora. Esto se puede configurar desde la página de preferencias de memoria.
 
-High speed cameras
+Cámaras de alta velocidad
 ******************
-The options in this group let you alter the framerate written in the metadata of the output file. 
-This influences the amount of resources required to replay the file and the apparent speed of the action.
+Las opciones de este grupo le permiten modificar la velocidad de fotogramas escrita en los metadatos del archivo de salida.
+Esto influye en la cantidad de recursos necesarios para reproducir el archivo y la velocidad aparente de la acción.
 
-A camera might be capable of producing and transmitting 1000 frames per second but the computer will not be able to play the file back at that speed and the monitor won't be able to refresh itself fast enough either.
-To work around this problem it is usual to reduce the framerate of the output file to a more typical one. Recording devices normally apply this transformation automatically. This results in a video that appears to be in slow motion.
+Una cámara puede ser capaz de producir y transmitir 1000 fotogramas por segundo, pero la computadora no podrá reproducir el archivo a esa velocidad y el monitor tampoco podrá actualizarse lo suficientemente rápido.
+Para evitar este problema, es habitual reducir la velocidad de fotogramas del archivo de salida a una más típica. Los dispositivos de grabación normalmente aplican esta transformación automáticamente. Esto da como resultado un video que parece estar en cámara lenta.
 
 
-Framerate replacement threshold
+Umbral de reemplazo de velocidad de fotogramas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This option controls the framerate from which the output file is modified to use a lower one.
+Esta opción controla la velocidad de fotogramas a partir de la cual se modifica el archivo de salida para utilizar uno más bajo.
 
-If the camera is configured to send images at a higher framerate than this value, the actual framerate stored in the file metadata will be the replacement framerate.
-If the camera is configured to send images at a lower framerate than this value, no change will happen. 
+Si la cámara está configurada para enviar imágenes a una velocidad de fotogramas superior a este valor, la velocidad de fotogramas real almacenada en los metadatos del archivo será la velocidad de fotogramas de reemplazo.
+Si la cámara está configurada para enviar imágenes a una velocidad de fotogramas inferior a este valor, no se producirá ningún cambio.
 
-Replacement framerate
+Velocidad de fotogramas de reemplazo
 ^^^^^^^^^^^^^^^^^^^^^
-This value defines the final framerate written in the file metadata when the framerate configured in the camera is above the threshold.
+Este valor define la velocidad de fotogramas final escrita en los metadatos del archivo cuando la velocidad de fotogramas configurada en la cámara está por encima del umbral.
 
-Image naming
+Nombre de la imagen
 ------------
 .. image:: /images/preferences/capture_imagenaming.png
 
-The options on this page let you configure the automated naming system for image snapshots of the camera stream.
+Las opciones de esta página le permiten configurar el sistema de nombres automatizado para instantáneas de imágenes de la transmisión de la cámara.
 
-The final path and file name is created by concatenating the :guilabel:`Root`, :guilabel:`Sub directory` and :guilabel:`File` values. 
-Each field can contain special macros referring to context variables that are automatically inserted in the final path.
+La ruta final y el nombre del archivo se crean concatenando los valores :guilabel:`Raíz`, :guilabel:`Subdirectorio` and :guilabel:`Archivo`. 
+Cada campo puede contener macros especiales que hacen referencia a variables de contexto que se insertan automáticamente en la ruta final.
 
-If no context variable are used at all, the file naming system will prepare the next recording by automatically incrementing a counter and appending a number to the file name.
+Si no se utiliza ninguna variable de contexto, el sistema de nombres de archivos preparará la siguiente grabación incrementando automáticamente un contador y agregando un número al nombre del archivo.
 
-If the computed value result in the same name as an existing file the capture screen will prompt for overwrite confirmation.
+Si el valor calculado da como resultado el mismo nombre que un archivo existente, la pantalla de captura solicitará una confirmación de sobrescritura.
 
-To view the list of available context variables click the :guilabel:`%` button next to the :guilabel:`Sub directory` or :guilabel:`File` fields.
+Para ver la lista de variables de contexto disponibles, haga clic en el botón :guilabel:`%` al lado de :guilabel:`Subdirectorio` o del campo de :guilabel:`Archivo`.
 
-The following context variables are available:
+Están disponibles las siguientes variables de contexto:
 
 ===========   ============= 
 Macro           Description
 ===========   =============
-%year          The current year
-%month         The current month as a number from 01 to 12.
-%day           The current day of the month from 01 to 31.
-%hour          The current hour from 00 to 23.
-%minute        The current minute from 00 to 59.
-%second        The current second from 00 to 59.
-%date          The current date in the format "YYYYMMDD".
-%time          The current time in the format "HHMMSS".
-%datetime      The current date and time as "YYYYMMDD-HHMMSS".
-%camalias      The camera alias.
-%camfps        The configured framerate for the camera.
-%recvfps       The framerate really received from the camera.
-%%             This is replaced by an empty string.
+%year          El año actual
+%month         El mes actual como un número del 01 a 12.
+%day           El día actual del mes desde 01 a 31.
+%hour          La hora actual de 00 a 23.
+%minute        El minuto actual de 00 a 59.
+%second        El segundo actual de 00 a 59.
+%date          La fecha actual en el formato "YYYYMMDD".
+%time          La hora actual en el formato "HHMMSS".
+%datetime      La fecha y hora actual como "YYYYMMDD-HHMMSS".
+%camalias      El alias de la cámara.
+%camfps        La velocidad de fotogramas configurada para la cámara.
+%recvfps       La velocidad de fotogramas real recibida de la cámara.
+%%             Esto se reemplaza por una cadena vacía.
 ===========   =============
 
-Anything that is not exactly part of a macro is copied verbatim to the output.
-Some examples assuming the current date and time is October 20th, 1968 at 16:00:00 (4 PM):
+Cualquier cosa que no sea exactamente parte de una macro se copia literalmente en la salida.
+Algunos ejemplos asumiendo que la fecha y hora actual es octubre 20, 1968 a las 16:00:00 (4 PM):
 
 .. code-block::
 
@@ -191,41 +191,40 @@ Some examples assuming the current date and time is October 20th, 1968 at 16:00:
     %date-%camalias: 19681020-mycamcorder
     
 
-.. note:: If you want to use a completely static file name and bypass the automated counter increment for consecutive recordings, use the :guilabel:`%%` macro variable. 
-    Be aware that this will require you to either enter the filename manually for every recording or overwrite an existing file.
+.. note:: Si desea utilizar un nombre de archivo completamente estático y omitir el incremento automático del contador para grabaciones consecutivas, utilice el macro variable :guilabel:`%%`. 
+    Tenga en cuenta que esto requerirá que ingrese el nombre de archivo manualmente para cada grabación o sobrescriba un archivo existente.
 
 
-Video naming
+Nombramiento de videos
 ------------
 .. image:: /images/preferences/capture_videonaming.png
 
-The options on this page let you configure the automated naming system for video recordings of the cameras streams.
+Las opciones de esta página le permiten configurar el sistema de nombres automatizado para las grabaciones de video de las secuencias de las cámaras.
 
-The options are similar to the ones in Image naming.
+Las opciones son similares a las de Nomenclatura de imágenes.
 
-.. warning:: Avoid using the Windows system drive as a target for camera recording to minimize concurrent access and resource sharing.
+.. warning:: Evite usar la unidad del sistema de Windows como destino para la grabación de la cámara para minimizar el acceso simultáneo y el uso compartido de recursos.
 
-.. tip:: To improve performances in dual recording scenarios use two different physical storage mediums for the left and right cameras.
-
+.. tip:: Para mejorar el rendimiento en escenarios de grabación dual, utilice dos medios de almacenamiento físico diferentes para las cámaras izquierda y derecha.
 
 Automation
 ----------
 .. image:: /images/preferences/capture_automation.png
 
-Audio trigger
+Disparador de audio
 *************
 
-Enable audio trigger
+Habilitar disparador de audio
 ^^^^^^^^^^^^^^^^^^^^
-When this option is checked Kinovea measures the volume level on the microphone and triggers the start of the recording when this volume goes above the configured threshold.
+Cuando esta opción está marcada, Kinovea mide el nivel de volumen en el micrófono y activa el inicio de la grabación cuando este volumen supera el umbral configurado.
 
-.. note:: The audio trigger mechanism can be disarmed for individual cameras from the capture screen controls.
+.. note:: El mecanismo de disparo de audio se puede desactivar para cámaras individuales desde los controles de la pantalla de captura.
 
-Input device
+Dispositivo de entrada
 ^^^^^^^^^^^^
-This option lets you select which microphone is used to trigger recordings. 
+Esta opción le permite seleccionar qué micrófono se utiliza para activar las grabaciones.
 
-.. tip:: Ensure that Kinovea can access your microphone by opening :guilabel:`Windows Sound settings`, going to :guilabel:`Microphone privacy settings` and turning on :guilabel:`Allow apps to access your microphone`.
+.. tip:: Asegúrese de que Kinovea pueda acceder a su micrófono abriendo :guilabel:`Configuración de sonido de Windows`, yendo a :guilabel:`Configuración de privacidad del micrófono` y encendiendo :guilabel:`Permita que las aplicaciones accedan a su micrófono`.
 
 Trigger threshold
 ^^^^^^^^^^^^^^^^^
