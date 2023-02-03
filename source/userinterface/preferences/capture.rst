@@ -207,7 +207,7 @@ Las opciones son similares a las de Nomenclatura de imágenes.
 
 .. tip:: Para mejorar el rendimiento en escenarios de grabación dual, utilice dos medios de almacenamiento físico diferentes para las cámaras izquierda y derecha.
 
-Automation
+Automatización
 ----------
 .. image:: /images/preferences/capture_automation.png
 
@@ -226,52 +226,52 @@ Esta opción le permite seleccionar qué micrófono se utiliza para activar las 
 
 .. tip:: Asegúrese de que Kinovea pueda acceder a su micrófono abriendo :guilabel:`Configuración de sonido de Windows`, yendo a :guilabel:`Configuración de privacidad del micrófono` y encendiendo :guilabel:`Permita que las aplicaciones accedan a su micrófono`.
 
-Trigger threshold
+Umbral de disparo
 ^^^^^^^^^^^^^^^^^
-The trigger threshold defines the volume level required to trigger recordings. 
-You should see the black line moving laterally as the microphone picks up sounds. The vertical red line represents the trigger level.
+El umbral de activación define el nivel de volumen necesario para activar las grabaciones.
+Debería ver la línea negra moviéndose lateralmente a medida que el micrófono capta los sonidos. La línea roja vertical representa el nivel de activación.
 
-The counter on the right is incremented each time the trigger is reached and reset when the threshold value is changed. 
-You can use this to get immediate feedback while figuring out the appropriate configuration.
+El contador de la derecha se incrementa cada vez que se alcanza el disparador y se restablece cuando se cambia el valor del umbral.
+Puede usar esto para obtener comentarios inmediatos mientras determina la configuración adecuada.
 
-Idle time
+Tiempo de inactividad
 ^^^^^^^^^^^^
 
-The idle time defines the amount of time after each recording during which the audio trigger is automatically disarmed.
+El tiempo de inactividad define la cantidad de tiempo después de cada grabación durante la cual el disparador de audio se desarma automáticamente.
 
 
-Stop recording by duration
+Dejar de grabar por duración
 **************************
-This option defines the maximum duration for recordings. 
-Recordings started manually or by audio trigger will be stopped right after they reach this duration. 
-Setting the value to 0 disables the option and requires manually stopping the recording process.
+Esta opción define la duración máxima de las grabaciones.
+Las grabaciones iniciadas manualmente o por activación de audio se detendrán inmediatamente después de que alcancen esta duración.
+Establecer el valor en 0 desactiva la opción y requiere detener manualmente el proceso de grabación.
 
-This option is orthogonal to delayed recording. 
-For example if the camera is configured with a 2-second delay and the maximum duration is set to 5 seconds, the created video will last 5 seconds as configured: 
-the first 2 seconds are actions that happened before the recording trigger and the last 3 seconds are actions that happened after the recording trigger.
+Esta opción es ortogonal a la grabación diferida.
+Por ejemplo, si la cámara está configurada con un retraso de 2 segundos y la duración máxima se establece en 5 segundos, el video creado durará 5 segundos según lo configurado:
+los primeros 2 segundos son acciones que sucedieron antes del disparo de grabación y los últimos 3 segundos son acciones que sucedieron después del disparo de grabación.
 
-In combination with the audio trigger this option lets you record multiple sequences without manually interacting with the computer.
+En combinación con el disparador de audio, esta opción le permite grabar múltiples secuencias sin interactuar manualmente con la computadora.
 
-.. note:: This value is a lower bound, the final video might be slightly longer than configured due to internal processing and alignment with frame boundaries.
+.. note:: Este valor es un límite inferior, el video final puede ser un poco más largo que el configurado debido al procesamiento interno y la alineación con los límites del cuadro.
 
-Post recording command
+Comando posterior a la grabación
 **********************
-This option lets you set up a program that will be run at the end of every recording. This can be used to automatically copy the file to a different location, perform compression or apply post-processing.
+Esta opción le permite configurar un programa que se ejecutará al final de cada grabación. Esto se puede usar para copiar automáticamente el archivo a una ubicación diferente, realizar una compresión o aplicar un procesamiento posterior.
 
-The command line can contain special macros referring to context variables that are automatically inserted in the final command.
+La línea de comando puede contener macros especiales que hacen referencia a variables de contexto que se insertan automáticamente en el comando final.
 
-The following context variables are available:
+Están disponibles las siguientes variables de contexto:
 
 ===========   ============= 
-Macro           Description
+Macro           Descripción
 ===========   =============
-%directory     The directory where the recording was saved.
-%filename      The name of the recorded file.
+%directory     El directorio donde se guardó la grabación.
+%filename      El nombre del archivo grabado.
 ===========   =============
 
-Ignore file overwrite warning
+Ignorar la advertencia de sobrescritura de archivos
 *****************************
-This option bypasses the overwrite confirmation dialog when the recording about to start points to an existing file. If the option is checked the existing file is irremediably deleted and overwritten by the new one.
+Esta opción omite el cuadro de diálogo de confirmación de sobrescritura cuando la grabación a punto de comenzar apunta a un archivo existente. Si la opción está marcada, el archivo existente se elimina irremediablemente y se sobrescribe con el nuevo.
 
-This option can be used if you are limited in space and do not need to save all sequences. 
-In this scenario you can continuously record to a single file and manually copy it to a different location only when you really want to keep it.
+Esta opción se puede utilizar si tiene un espacio limitado y no necesita guardar todas las secuencias.
+En este escenario, puede grabar continuamente en un solo archivo y copiarlo manualmente en una ubicación diferente solo cuando realmente desee conservarlo.
