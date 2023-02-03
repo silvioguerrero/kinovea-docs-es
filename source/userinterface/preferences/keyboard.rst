@@ -7,21 +7,21 @@ General
 
 .. image:: /images/preferences/keyboard_general.png
 
-This page lets you view and change the keyboard shortcuts for Kinovea internal commands.  
-The shortcuts are grouped in categories based on which part of the user interface the shortcut is active on. 
-The Commands list view displays each command and the corresponding keyboard shortcut.
+Esta página le permite ver y cambiar los atajos de teclado para los comandos internos de Kinovea.
+Los accesos directos se agrupan en categorías según la parte de la interfaz de usuario en la que está activo el acceso directo.
+La vista de lista de Comandos muestra cada comando y el atajo de teclado correspondiente.
 
-Modifying a keyboard shortcut
+Modificar un atajo de teclado
 *****************************
 
-To modify a keyboard shortcut select the corresponding category and command in the command list.
-The existing keyboard shortcut will be displayed in the text box at the bottom left of the page. 
+Para modificar un método abreviado de teclado, seleccione la categoría y el comando correspondientes en la lista de comandos.
+El atajo de teclado existente se mostrará en el cuadro de texto en la parte inferior izquierda de la página.
 
-Click in the text box and perform the sequence of keys that you wish to use as a replacement shortcut. Click the :guilabel:`Apply` button to commit the new shortcut to the preferences.
+Haga clic en el cuadro de texto y ejecute la secuencia de teclas que desea usar como atajo de reemplazo. Haga clic en el botón :guilabel:`Aplicar` para enviar el nuevo acceso directo a las preferencias.
 
-Click the :guilabel:`Clear` button to remove the existing keyboard shortcut for the active command.
+Haga clic en el botón :guilabel:`Limpiar` para eliminar el atajo de teclado existente para el comando activo.
 
-Click the :guilabel:`Default` button to restore this particular command to its default keyboard shortcut.
+Haga clic en el botón :guilabel:`Por defecto` para restaurar este comando en particular a su método abreviado de teclado predeterminado.
 
 
 
