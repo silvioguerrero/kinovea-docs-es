@@ -211,7 +211,7 @@ El factor de escala entre píxeles y esta unidad se define durante el proceso de
    Uso de la unidad de longitud personalizada para agregar micrómetros a la lista de unidades de longitud integradas.
 
 
-.. rubric:: Footnotes
+.. rubric:: Notas
 
 .. [#f1] Con la excepción del eje de tiempo en los diálogos de análisis cinemático. En estos cuadros de diálogo, el tiempo siempre se muestra numéricamente, ya sea en milisegundos o normalizado.
 
