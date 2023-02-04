@@ -11,11 +11,11 @@ Las siguientes páginas de preferencias están disponibles:
 .. toctree::
    :maxdepth: 1
 
-   preferences/General
-   preferences/Lectura
-   preferences/Dibujos
-   preferences/Captura
-   preferences/Teclado
+   preferences/general
+   preferences/playback
+   preferences/drawings
+   preferences/capture
+   preferences/keyboard
    
 .. image:: /images/preferences/sections.png
 
