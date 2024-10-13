@@ -2,22 +2,22 @@
 
 # kinovea-docs
 
-This is Kinovea's user-documentation project.
+Este es el proyecto de documentación del usuario de Kinovea.
 
-Introduction
+Introducción
 ------------
-Kinovea is an open source video player and camera capture software with features tailored to sports applications such as comparison, annotation and measurement. It is a relatively mature project, it has been in development since 2004, has been downloaded more than a million times and is cited in many scientific papers in the field of sports science. 
+Kinovea es un reproductor de vídeo y software de captura de cámara de código abierto con funciones adaptadas a aplicaciones deportivas como comparación, anotación y medición. Es un proyecto relativamente maduro, ha estado en desarrollo desde 2004, se ha descargado más de un millón de veces y se cita en muchos artículos científicos en el campo de las ciencias del deporte.
 
-**Main website**: https://www.kinovea.org/
+**Sitio web Principal**: https://www.kinovea.org/
 
-Resources
+Recursos
 ---------
-The current live documentation can be found here: https://www.kinovea.org/help/en/index.htm
+La documentación en vivo actual se puede encontrar aquí: https://www.kinovea.org/help/en/index.htm
 
 History
 -------
 
-List of successive release posts since version 0.8.15, containing descriptions of new features (some of the features have seen multiple updates over the course of these versions):
+Lista de publicaciones de lanzamiento sucesivas desde la versión 0.8.15, que contienen descripciones de nuevas funciones (algunas de las funciones han recibido múltiples actualizaciones a lo largo de estas versiones):
 * [0.8.16](https://www.kinovea.org/en/forum/viewtopic.php?id=483)
 * [0.8.17](https://www.kinovea.org/en/forum/viewtopic.php?id=598)
 * [0.8.18](https://www.kinovea.org/en/forum/viewtopic.php?id=628)
