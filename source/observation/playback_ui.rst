@@ -1,56 +1,56 @@
 
-Playback screen user interface
+Interfaz de usuario de la pantalla de reproducción
 ==============================
 
-The playback screen is divided in the following areas:
+La pantalla de reproducción está dividida en las siguientes áreas:
 
 .. image:: /images/observation/ui-playback.png
 
-1. Image viewport
+1. Ventana gráfica de imagen
 -----------------
-The image viewport is the main area where the video is played back.
+La ventana de visualización de imágenes es el área principal donde se reproduce el vídeo.
 
-Double clicking the image maximizes it in the viewport area.
-The handles at the four corners of the image can be used to change its size.
+Al hacer doble clic en la imagen, se maximiza en el área de la ventana gráfica.
+Los tiradores en las cuatro esquinas de la imagen se pueden utilizar para cambiar su tamaño.
 
-2. Infobar
+2. Infobar (barra de información)
 ----------
 
-The infobar contains the name of the file, the image size and the frame rate.
+La barra de información contiene el nombre del archivo, el tamaño de la imagen y la velocidad de fotogramas.
 
-The file name can be clicked to access a context menu to switch between normal video mode and replay folder observer mode.
+Se puede hacer clic en el nombre del archivo para acceder a un menú contextual para cambiar entre el modo de vídeo normal y el modo de observador de carpeta de reproducción.
 
 .. image:: /images/capture/menuobserver.png
 
 
-3. Drawings toolbar
+3. Barra de herramientas de dibujos
 -------------------
-The drawings toolbar contains buttons to create new key images, select the active tool and open the color profile.
+La barra de herramientas de dibujos contiene botones para crear nuevas imágenes clave, seleccionar la herramienta activa y abrir el perfil de color.
 
 .. image:: /images/observation/toolbar.png
 
-The toolbar contains more tools than those immediately visible.
-Buttons that host extra tools have a little black triangle in the top-left corner. 
-The extra tools can be accessed by right-clicking or long-clicking the primary button.
+La barra de herramientas contiene más herramientas que las inmediatamente visibles.
+Los botones que albergan herramientas adicionales tienen un pequeño triángulo negro en la esquina superior izquierda.
+Se puede acceder a las herramientas adicionales haciendo clic derecho o manteniendo presionado el botón principal.
 
 .. image:: /images/observation/subtools.png
 
-4. Working zone area
+4. Área de la zona de trabajo
 --------------------
-The working zone defines the segment of the video that the player is working with. 
-The play head loops within the working zone.
+La zona de trabajo define el segmento del vídeo con el que está trabajando el reproductor.
+El cabezal de reproducción gira dentro de la zona de trabajo.
 
 .. image:: /images/observation/workingzone.png
 
-|TimeOrigin| Marks the current time as the time origin. This makes time values relative to this moment.
+|TimeOrigin| Marca la hora actual como origen de la hora. Esto hace que los valores de tiempo sean relativos a este momento.
 
-|WZLock| Locks the working zone start and end point to avoid changing them by mistake.
+|WZLock| Bloquea el punto de inicio y fin de la zona de trabajo para evitar cambiarlos por error.
 
-|WZStart| Sets the starting point of the working zone within the video.
+|WZStart| Establece el punto de inicio de la zona de trabajo dentro del vídeo.
 
-|WZEnd| Sets the ending point of the working zone within the video.
+|WZEnd| Establece el punto final de la zona de trabajo dentro del vídeo.
 
-|WZReset| Resets the working zone to the whole video.
+|WZReset| Restablece la zona de trabajo a todo el vídeo.
 
 .. |TimeOrigin| image:: /images/observation/icons/timeorigin.png
 .. |WZLock| image:: /images/observation/icons/wz_lock.png
@@ -58,79 +58,79 @@ The play head loops within the working zone.
 .. |WZEnd| image:: /images/observation/icons/wz_right.png
 .. |WZReset| image:: /images/observation/icons/wz_reset.png
 
-You can also update the working zone boundaries by directly manipulating the blue end points.
+También puede actualizar los límites de la zona de trabajo manipulando directamente los puntos finales azules.
 
-.. tip:: If the amount of data fits in the cache memory, the working zone will be loaded in memory.
+.. tip:: Si la cantidad de datos cabe en la memoria caché, la zona de trabajo se cargará en la memoria.
 
-    This improves playback performances and enables the :menuselection:`Video --> Overview` and :menuselection:`Video --> Reverse` menus.
-    The cache memory can be configured under :menuselection:`Options --> Preferences --> Playback --> Memory`.
+    Esto mejora el rendimiento de la reproducción y permite la selección de menú: `Video --> Descripción general` and :menuselection:`Video --> Inverso` menús.
+    La memoria caché se puede configurar en :menuselection:`Opciones --> Preferencias --> Lectura --> Memoria`.
 
-5. Timeline area
+5. Área de línea de tiempo
 ----------------
-The timeline area displays the current position within the video, time markers and the speed control.
+El área de la línea de tiempo muestra la posición actual dentro del vídeo, los marcadores de tiempo y el control de velocidad.
 
 .. image:: /images/observation/timeline.png
 
-Time markers
+Marcadores de tiempo
 **************************
-Time markers are the colored rectangles inside the timeline gutter, they provide information about annotations.
-They use the following color coding:
+Los marcadores de tiempo son rectángulos de colores dentro del margen de la línea de tiempo y proporcionan información sobre las anotaciones.
+Utilizan el siguiente código de colores:
 
-- Red: the time origin.
-- Green: a key image.
-- Blue: a chronometer.
-- Purple: a trajectory.
+- Rojo: el origen del tiempo.
+- Verde: una imagen clave.
+- Azul: un cronómetro.
+- Púrpura: una trayectoria.
 
-Speed control
+Control de velocidad
 *************
 
-The speed slider goes from 0 to twice the nominal speed of the video.
+El control deslizante de velocidad va de 0 al doble de la velocidad nominal del vídeo.
 
-The displayed speed value takes into account the slow motion factor configured such that the speed is shown as a percentage of the real world action speed.
-For example if a video is filmed at 240 fps and saved into a file as 24 fps, the video will normally play back at 10% of the real world speed. 
-In this case the speed control will go from 0 to 20% with a mid-point at 10%.
+El valor de velocidad mostrado tiene en cuenta el factor de cámara lenta configurado de manera que la velocidad se muestra como un porcentaje de la velocidad de acción en el mundo real.
+Por ejemplo, si un vídeo se filma a 240 fps y se guarda en un archivo a 24 fps, el vídeo normalmente se reproducirá al 10% de la velocidad real. 
+En este caso el control de velocidad irá del 0 al 20% con un punto medio en el 10%.
 
-.. warning:: If the video cannot be played back at its nominal speed for performance reasons the playback speed value will automatically be lowered down.
+.. warning:: Si el vídeo no se puede reproducir a su velocidad nominal por motivos de rendimiento, el valor de la velocidad de reproducción se reducirá automáticamente.
 
-    Performance for playing back depends on the displayed image size, the frame rate and the file format.
+    El rendimiento de la reproducción depende del tamaño de la imagen mostrada, la velocidad de fotogramas y el formato del archivo.
 
-6. Playback controls
+6. Controles de reproducción
 --------------------
 
 .. image:: /images/observation/playbackcontrols.png
 
-From left to right the buttons provides the following functions:
+De izquierda a derecha, los botones proporcionan las siguientes funciones:
 
-- Returns to the start of the video or working zone.
-- Goes back one frame.
-- Starts playback.
-- Goes forward one frame.
-- Goes to the end of the video or working zone.
+- Regresa al inicio del vídeo o zona de trabajo.
+- Retrocede un fotograma.
+- Inicia la reproducción.
+- Avanza un fotograma.
+- Va al final del vídeo o zona de trabajo.
 
-The playback loops to the start when it reaches the end of the video or working zone.
+La reproducción regresa al inicio cuando llega al final del video o zona de trabajo.
 
-Navigation
+Navegación
 **********
 
-It is also possible to move in the video using the following shortcuts:
+También es posible moverse en el vídeo usando los siguientes atajos:
 
-- Use the **mouse wheel** to move forward and backward.
-- Use the :kbd:`←` and :kbd:`→` arrow keys on the keyboard to move frame by frame.
-- Use the :kbd:`↟` (Page up) and :kbd:`↡` (Page down) keys to jump 10% forward.
-- Use the :kbd:`⇱` (Home) and :kbd:`⇲` (End) keys to jump to the start and end.
+- Utilice la **rueda del mouse** para avanzar y retroceder.
+- Utilice :kbd:`←` y :kbd:`→` teclas de flecha del teclado para moverse cuadro por cuadro.
+- Utilice :kbd:`↟` (Page up) y :kbd:`↡` Teclas (Av Pág) para saltar un 10% hacia adelante.
+- Utilice :kbd:`⇱` (Home) and :kbd:`⇲` Teclas (Fin) para saltar al inicio y al final.
 
  
-7. Export controls
+7. Controles de exportación
 ------------------
-The export controls provide ways to export videos and images of the current file.
+Los controles de exportación brindan formas de exportar videos e imágenes del archivo actual.
 
 .. image:: /images/observation/exportcontrols.png
 
-See also: :doc:`/export/video`.
+Ver también: :doc:`/export/video`.
 
-8. Context menu
+8. Menú contextual
 ---------------
-The context menu provides quick access to more functions.
+El menú contextual proporciona acceso rápido a más funciones.
 
 .. image:: /images/observation/contextmenu.png
 
