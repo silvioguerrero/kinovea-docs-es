@@ -1,72 +1,71 @@
 
-Image transformation
+Transformación de imagen
 ====================
 
-Image orientation
+Orientación de la imagen
 -----------------
-To change the orientation of the image use the menus under :menuselection:`Image --> Image rotation`.
+Para cambiar la orientación de la imagen utilice los menús debajo :menuselection:`Imagen --> Rotación`.
 
-The following options are available:
+Están disponibles las siguientes opciones:
 
-- :guilabel:`No rotation`
-- :guilabel:`90° clockwise`
-- :guilabel:`90° counter-clockwise`
+- :guilabel:`Sin rotación`
+- :guilabel:`90° en sentido horario`
+- :guilabel:`90° en sentido antihorario`
 - :guilabel:`180°`
 
-Videos filmed in portrait mode on a smartphone typically already have a flag embedded in the video file and don't need to be manually rotated.
+Los videos filmados en modo retrato en un teléfono inteligente generalmente ya tienen una bandera incrustada en el archivo de video y no es necesario girarlos manualmente.
 
-Image mirroring
+Imagen reflejada (espejo)
 ---------------
-To mirror the image, that is to flip it along the vertical axis, use the menu Image mirror.
+Para reflejar la imagen, es decir, voltearla a lo largo del eje vertical, utilice el menú Espejo.
 
-Zoom & magnification
+Zoom y ampliación
 --------------------
-To zoom into the image use :kbd:`CTRL` + **mouse wheel** or :kbd:`CTRL` + :kbd:`Minus` and :kbd:`CTRL` + :kbd:`Plus`.
+Para ampliar la imagen utilice :kbd:`CTRL` + **rueda del ratón** o :kbd:`CTRL` + :kbd:`Menos` and :kbd:`CTRL` + :kbd:`Más`.
 
-:kbd:`CTRL` + :kbd:`Numpad0` resets the zoom level.
+:kbd:`CTRL` + :kbd:`Numpad0` restablece el nivel de zoom.
 
-The magnifier tool can also be used to create a picture in picture magnified area.
+La herramienta de lupa también se puede utilizar para crear una imagen en un área ampliada.
 
 .. image:: /images/observation/magnifier.png
 
-Image aspect ratio
+Relación de aspecto de la imagen
 ------------------
-To change the aspect ratio of the image use the menus under :menuselection:`Image --> Image format`.
+Para cambiar la relación de aspecto de la imagen utilice los menús debajo :menuselection:`Imagen --> Formato de imagen`.
 
-Some devices use non-rectangular pixels and don't fill the corresponding pixel aspect ratio value in the file metadata. 
-In these case it might be necessary to force the aspect ratio to a known value.
+Algunos dispositivos utilizan píxeles no rectangulares y no completan el valor de relación de aspecto de píxeles correspondiente en los metadatos del archivo.
+En estos casos, podría ser necesario forzar la relación de aspecto a un valor conocido.
 
-The following options are available:
+Están disponibles las siguientes opciones:
 
-- :guilabel:`Auto detection`
-- :guilabel:`Force 4:3`
-- :guilabel:`Force 16:9`
+- :guilabel:`Auto detección`
+- :guilabel:`Forzar 4:3`
+- :guilabel:`Forzar 16:9`
 
-Deinterlacing
+Desentrelazado
 -------------
-To deinterlace the video use the menu :menuselection:`Image --> Deinterlace`.
+Para desentrelazar el vídeo utilice el menú :menuselection:`Imagen --> Desentrelazar`.
 
-Some capture devices store video using an interlaced format.
-Interlaced videos store half images at twice the frame rate, alternating odd and even rows.
-This causes a combing artifact when the filmed motion is fast as objects or subjects move during the half frame interval.
+Algunos dispositivos de captura almacenan vídeo en formato entrelazado.
+Los vídeos entrelazados almacenan la mitad de las imágenes al doble de velocidad de fotogramas, alternando filas pares e impares.
+Esto provoca un artefacto de peinado cuando el movimiento filmado es rápido cuando los objetos o sujetos se mueven durante el intervalo de medio fotograma.
 
-The deinterlacing algorithm reconstructs full images by combining rows from adjacent frames.
+El algoritmo de desentrelazado reconstruye imágenes completas combinando filas de fotogramas adyacentes.
 
 .. image:: /images/observation/deinterlacing.png
 
 Debayering
 ----------
-Videos saved in Bayer mode contain the raw sensor data before color reconstruction. 
-The color can be rebuilt using the menu under :menuselection:`Image --> Demosaicing`.
+Los vídeos guardados en modo Bayer contienen los datos sin procesar del sensor antes de la reconstrucción del color.
+El color se puede reconstruir usando el menú debajo :menuselection:`Imagen --> Mosaico de Bayer`.
 
 .. image:: /images/observation/debayering.png
 
-The following options are available:
+Están disponibles las siguientes opciones:
 
 - :guilabel:`RGGB`
 - :guilabel:`BGGR`
 - :guilabel:`GRBG`
 - :guilabel:`GBRG`
 
-The appropriate option to select depends on the device and mode used during recording.
-
+La opción apropiada para seleccionar depende del dispositivo y modo utilizado durante la grabación.
