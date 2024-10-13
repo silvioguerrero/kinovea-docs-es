@@ -1,11 +1,11 @@
 
-Reverse mode
+Modo inverso
 ============
-The reverse mode is a video mode where the video frames are re-ordered backwards.
+El modo inverso es un modo de vídeo en el que los fotogramas de vídeo se reordenan al revés.
 
-To enter the reverse mode, use the menu :menuselection:`Video --> Reverse`.
+Para ingresar al modo inverso, use el menú :menuselection:`Video --> Inverso`.
 
-.. tip:: The reverse mode is only enabled when the entire working zone is cached in memory. 
-    To change the amount of memory used for the cache go to :menuselection:`Options --> Preferences --> Playback --> Memory`.
+.. tip:: El modo inverso solo se habilita cuando toda la zona de trabajo está almacenada en la memoria caché.
+    Para cambiar la cantidad de memoria utilizada para el caché, vaya a :menuselection:`Opciones --> Preferencias --> Lectura --> Memoria`.
 
-To quit the Reverse mode, use the close button in the top-right corner of the playback screen.
+Para salir del modo Inverso, use el botón de cerrar en la esquina superior derecha de la pantalla de reproducción.
