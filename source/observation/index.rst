@@ -1,5 +1,5 @@
 
-Observation and comparison
+Observación y comparación.
 ==========================
 
 .. toctree::
