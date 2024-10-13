@@ -115,9 +115,9 @@ Navegación
 También es posible moverse en el vídeo usando los siguientes atajos:
 
 - Utilice la **rueda del mouse** para avanzar y retroceder.
-- Utilice :kbd:`←` y :kbd:`→` teclas de flecha del teclado para moverse cuadro por cuadro.
-- Utilice :kbd:`↟` (Page up) y :kbd:`↡` Teclas (Av Pág) para saltar un 10% hacia adelante.
-- Utilice :kbd:`⇱` (Home) and :kbd:`⇲` Teclas (Fin) para saltar al inicio y al final.
+- Utilice las teclas de flecha del teclado :kbd:`←` y :kbd:`→` para moverse cuadro por cuadro.
+- Utilice las teclas (Page up) :kbd:`↟` y (Avg pág) :kbd:`↡` para saltar un 10% hacia adelante.
+- Utilice las teclas :kbd:`⇱` (Home) y :kbd:`⇲` (Fin) para saltar al inicio y al final.
 
  
 7. Controles de exportación
