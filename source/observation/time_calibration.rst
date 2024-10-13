@@ -1,35 +1,34 @@
 
-Time calibration
+Calibración de tiempo
 ================
 
-Capture frame rate
+Velocidad de fotogramas de captura
 ------------------
-When a video is captured with a high speed camera (or using the high speed or slow motion function of a smartphone),
-the generated video file often has a frame rate different from the capture frame rate.
-For example a video filmed at 1000 fps may be saved to a file with a more typical playback frame rate of 25 fps.
+Cuando se captura un vídeo con una cámara de alta velocidad (o usando la función de cámara lenta o alta velocidad de un teléfono inteligente),
+El archivo de vídeo generado suele tener una velocidad de fotogramas diferente de la velocidad de fotogramas de captura.
+Por ejemplo, un vídeo filmado a 1000 fps se puede guardar en un archivo con una velocidad de fotogramas de reproducción más típica de 25 fps.
 
-In this case the video will play back slower than real time, which is expected,
-but the time-related information and calculations would be erroneous if they were based on the playback framerate.
+En este caso, el vídeo se reproducirá más lento que en tiempo real, lo cual es de esperar.
+pero la información y los cálculos relacionados con el tiempo serían erróneos si se basaran en la velocidad de fotogramas de reproducción.
 
-To work with this type of video it is important to configure (or "calibrate") the time scale.
-This is done by going to :menuselection:`Video --> Configure video timing` and filling the capture frame rate.
+Para trabajar con este tipo de vídeo es importante configurar (o "calibrar") la escala de tiempo.
+Esto se hace yendo a :menuselection:`Herramientas --> Calibración del tiempo` y llenando la velocidad de fotogramas de captura.
 
 .. image:: /images/observation/captureframerate.png
 
-Changing this option does not change the nominal speed at which the video is played back.
-In other words setting the speed control at its mid-point will still play back the video at the same slow motion rate as before.
-Instead, this option changes the time coordinates of the images.
+Cambiar esta opción no cambia la velocidad nominal a la que se reproduce el vídeo.
+En otras palabras, configurar el control de velocidad en su punto medio seguirá reproduciendo el vídeo a la misma velocidad de cámara lenta que antes.
+En cambio, esta opción cambia las coordenadas temporales de las imágenes.
 
-Broken playback frame rate
+Velocidad de fotogramas de reproducción rota
 --------------------------
-In some cases a video is saved with a frame rate which is just plain wrong, or Kinovea cannot read it.
-For example a USB camera might claim that it is capturing video at 25 fps but the video stream is actually transfered at 15 fps.
+En algunos casos, un vídeo se guarda con una velocidad de fotogramas que simplemente es incorrecta o Kinovea no puede leerlo.
+Por ejemplo, una cámara USB podría afirmar que está capturando vídeo a 25 fps, pero la transmisión de vídeo en realidad se transfiere a 15 fps.
 
-In this case the video will play back at the wrong speed and the time calibration will be wrong.
-If you know the real playback frame rate at which the video is supposed to be played back, you may enter it in :menuselection:`Video --> Configure video timing`.
+En este caso, el vídeo se reproducirá a una velocidad incorrecta y la calibración del tiempo será incorrecta.
+Si conoce la velocidad de cuadros de reproducción real a la que se supone que se reproducirá el video, puede ingresarla en :menuselection:`Herramientas --> Calibración del tiempo`.
 
 .. image:: /images/observation/brokenframerate.png
 
-Changing this option does change the nominal speed at which the video is played back.
-
+Cambiar esta opción cambia la velocidad nominal a la que se reproduce el vídeo.
 
