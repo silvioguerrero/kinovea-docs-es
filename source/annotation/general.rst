@@ -1,38 +1,38 @@
 
-Annotating videos
+Anotar vídeos
 =================
 
-Introduction
+Introducción
 ------------
-Annotation tools are used to add drawings and text to images of the video.
-Some tools can also be used to measure distances or display coordinates.
+Las herramientas de anotación se utilizan para agregar dibujos y texto a las imágenes del video.
+Algunas herramientas también se pueden utilizar para medir distancias o mostrar coordenadas.
 
-Drawings are attached to a specific key image.
-Deleting the key image deletes all the drawings attached to it.
+Los dibujos se adjuntan a una imagen clave específica.
+Al eliminar la imagen clave, se eliminan todos los dibujos adjuntos a ella.
 
-Drawings are vector-based: they can be modified after they have been added to the video.
+Los dibujos están basados ​​en vectores: se pueden modificar después de agregarlos al video.
 
-Drawings have a context menu that can be used to access style options, visibility configuration, tool-specific functions, tracking management, copy and paste, support and deletion.
+Los dibujos tienen un menú contextual que se puede utilizar para acceder a opciones de estilo, configuración de visibilidad, funciones específicas de herramientas, gestión de seguimiento, copiar y pegar, soporte y eliminación.
 
-While a tool is active, right clicking the viewport opens the color profile at the page of the active tool.
+Mientras una herramienta está activa, al hacer clic derecho en la ventana gráfica se abre el perfil de color en la página de la herramienta activa.
 
-Tool bar
+Barra de herramientas
 ------------
 
-The tool bar is found under the main viewport.
+La barra de herramientas se encuentra debajo de la ventana gráfica principal.
 
 .. image:: /images/observation/toolbar.png
 
-There are more tools than those immediately visible. 
-Buttons with a small arrow in the top-left corner contain other tools that can be accessed by doing a right click or a long click (click and hold) on the button.
+Hay más herramientas que las inmediatamente visibles.
+Los botones con una pequeña flecha en la esquina superior izquierda contienen otras herramientas a las que se puede acceder haciendo clic derecho o un clic prolongado (mantener presionado) en el botón.
 
 .. image:: /images/annotation/tools_notch.png
 
-A flying menu opens with the extra tools available.
+Se abre un menú volador con las herramientas adicionales disponibles.
 
 .. image:: /images/observation/subtools.png
 
-General tools
+Herramientas generales
 -------------
 
 .. |Hand| image:: /images/annotation/icons/handtool.png
@@ -40,31 +40,31 @@ General tools
 .. |Commentary| image:: /images/annotation/icons/comments2.png
 .. |ColorProfile| image:: /images/annotation/icons/editorcolor.png
 
-|Hand| **Hand**
+|Hand| **Mano**
 
-The hand tool is used to manipulate drawings or pan the whole image.
-To stop using a particular tool and come back to the hand tool use the :kbd:`Escape` key or click the hand tool button.
+La herramienta manual se utiliza para manipular dibujos o desplazarse por toda la imagen.
+Para dejar de usar una herramienta en particular y volver a la herramienta manual, use la tecla :kbd:`Escape` o haga clic en el botón de la herramienta manual.
 
-.. tip:: You can also use the middle mouse button to directly manipulate drawings without changing back to the hand tool.
+.. tip:: También puede utilizar el botón central del ratón para manipular dibujos directamente sin volver a la herramienta manual.
 
-|KeyImage| **Key image**
+|KeyImage| **Imagen clave**
 
-Adds a new key image.
+Agrega una nueva imagen clave.
 
 .. image:: /images/annotation/keyimages.png
 
-|Commentary| **Commentary**
+|Commentary| **Comentario**
 
-Opens the commentary dialog to attach a paragraph of text to the key image using the rich-text editor.
+Abre el cuadro de diálogo de comentarios para adjuntar un párrafo de texto a la imagen clave utilizando el editor de texto enriquecido.
 
 .. image:: /images/annotation/comments.png
 
-|ColorProfile| **Color profile**
+|ColorProfile| **Perfil de color**
 
-Opens the color profile dialog to change the default style of drawings.
+Abre el cuadro de diálogo del perfil de color para cambiar el estilo predeterminado de los dibujos.
 
 .. image:: /images/annotation/colorprofile.png
 
-See also: :doc:`/annotation/style_and_opacity`.
+Ver también: :doc:`/annotation/style_and_opacity`.
 
 
